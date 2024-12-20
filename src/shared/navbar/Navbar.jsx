@@ -6,7 +6,7 @@ import "./Navbar.module.css";
 function NavBar() {
   return (
     <>
-      <Navbar expand="lg" bg="light" variant="light" className="py-3">
+      <Navbar expand="lg" bg="light" variant="light" className="py-3 shadow">
         <Container>
           <Navbar.Brand href="#">
             <img src={logo} alt="Logo" height="40" />
