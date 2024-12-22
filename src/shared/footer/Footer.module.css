@@ -3,6 +3,7 @@
 .container {
   display: flex;
   justify-content: center;
+  
 }
 .container .footer {
   background-color: var(--footer-background);
@@ -30,5 +31,21 @@
   }
 }
 
+span{
+  color: var(--primary-color);
+  font-weight:600;
+}
 
-
+hr{
+  border: 1px solid #de9b21a8 !important;
+}
+Button{
+  color:var(--background-color) !important;
+  border:2px solid var( --secondary-color) !important;
+  background-color:var( --secondary-color) !important;
+  transition: all .7s ease !important;
+}
+Button:hover{
+  background-color:transparent !important;
+  color:var( --secondary-color) !important;
+}
