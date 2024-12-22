@@ -1,5 +1,34 @@
 @import "../../styles/variables.css";
 
-.footer {
-  background-color: var(--footer-background);
+.container {
+  display: flex;
+  justify-content: center;
 }
+.container .footer {
+  background-color: var(--footer-background);
+  position:relative;
+  margin-top:60px;
+  border-radius: 20px;
+  width:92%;
+}
+
+.waveShape {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top:0;
+  left:0;
+  background-color: var(--footer-background);
+  transform: rotate(180deg);
+  z-index: 1; 
+}
+
+
+@media (max-width: 576px) {
+  .waveShape{
+    bottom:-12px;
+  }
+}
+
+
+
