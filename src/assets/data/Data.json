@@ -1,5 +1,5 @@
 {
-    "popularThingsToDo": [
+  "popularThingsToDo": [
     { "id": 1, "title": "Cruises", "image": "1 (1).jpg" },
     { "id": 2, "title": "Beach Tours", "image": "1 (2).jpg" },
     { "id": 3, "title": "City Tours", "image": "2 (2).jpg" },
@@ -154,7 +154,7 @@
     }
   ],
 
-    "hotels": [
+  "hotels": [
     {
       "id": 1,
       "name": "Luxury Stay Hotel",
@@ -202,12 +202,7 @@
         "latitude": 37.774929,
         "longitude": -122.419418
       },
-      "amenities": [
-        "Free Breakfast",
-        "Pet-Friendly",
-        "Parking",
-        "Free Wi-Fi"
-      ],
+      "amenities": ["Free Breakfast", "Pet-Friendly", "Parking", "Free Wi-Fi"],
       "price_per_night": 90,
       "rating": 4.2,
       "available_rooms": 20,
@@ -231,8 +226,8 @@
         "state": "FL",
         "country": "USA",
         "zip_code": "33101",
-        "latitude": 25.761680,
-        "longitude": -80.191790
+        "latitude": 25.76168,
+        "longitude": -80.19179
       },
       "amenities": [
         "Private Beach",
@@ -347,7 +342,7 @@
         "country": "USA",
         "zip_code": "02101",
         "latitude": 42.360082,
-        "longitude": -71.058880
+        "longitude": -71.05888
       },
       "amenities": ["Free Breakfast", "Library", "Garden"],
       "price_per_night": 120,
@@ -447,6 +442,80 @@
       "phone": "+1 678 901 234",
       "role": "Support",
       "preferences": ["Customer Assistance", "Issue Resolution"]
+    }
+  ],
+  "hotelPosts": [
+    {
+      "id": 1,
+      "title": "Kenya vs Tanzania Safari: The Better African Safari Experience",
+      "date": "April 06 2023",
+      "author": "Ali Tufan",
+      "description": "Explore the ultimate safari destinations in Africa.",
+      "image": "../images/1_dis.png"
+    },
+    {
+      "id": 2,
+      "title": "Exploring the Serengeti: A Wildlife Adventure",
+      "date": "April 07 2023",
+      "author": "Emily Johnson",
+      "description": "Discover the wonders of Serengeti's wildlife.",
+      "image": "../images/2_dis.png"
+    },
+    {
+      "id": 3,
+      "title": "Into the Wild: An Unforgettable Safari Journey",
+      "date": "April 08 2023",
+      "author": "Maxwell Rhodes",
+      "description": "Experience the adventure of a lifetime.",
+      "image": "../images/3_dis.png"
+    },
+    {
+      "id": 4,
+      "title": "Safari Photography: Capturing the Essence of Wildlife",
+      "date": "April 09 2023",
+      "author": "Sophia Martinez",
+      "description": "Learn tips to take stunning safari photos.",
+      "image": "../images/4_dis.png"
+    },
+    {
+      "id": 5,
+      "title": "Surviving the Safari: A Comprehensive Guide",
+      "date": "April 10 2023",
+      "author": "Elijah Williams",
+      "description": "Prepare yourself for the ultimate adventure.",
+      "image": "../images/5_dis.png"
+    },
+    {
+      "id": 6,
+      "title": "Luxury Safari Experience: Where Comfort Meets Wilderness",
+      "date": "April 11 2023",
+      "author": "Ava Thompson",
+      "description": "Enjoy luxury and adventure together.",
+      "image": "../images/6_dis.png"
+    },
+    {
+      "id": 7,
+      "title": "African Safari: A Journey Through Nature's Wonders",
+      "date": "April 12 2023",
+      "author": "Oliver Davis",
+      "description": "Explore Africa's breathtaking landscapes.",
+      "image": "../images/7_dis.png"
+    },
+    {
+      "id": 8,
+      "title": "Safari Camping Tips: Making the Most of the Wild Outdoors",
+      "date": "April 13 2023",
+      "author": "Harper Garcia",
+      "description": "Tips for an unforgettable camping safari.",
+      "image": "../images/8_dis.png"
+    },
+    {
+      "id": 9,
+      "title": "The Beauty of Wildlife: A Safari Perspective",
+      "date": "April 14 2023",
+      "author": "Evelyn Cooper",
+      "description": "Discover the wonders of wildlife photography.",
+      "image": "../images/9_dis.png"
     }
   ]
 }
