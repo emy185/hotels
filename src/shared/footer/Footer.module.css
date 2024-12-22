@@ -4,6 +4,7 @@
   display: flex;
   justify-content: center;
 }
+
 .container .footer {
   background-color: var(--footer-background);
   position:relative;

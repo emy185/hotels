@@ -1,0 +1,48 @@
+@import "../../styles/variables.css";
+
+.faq h1{
+    color: var(--secondary-color);
+    font-weight: bold;
+    font-size: 25px;
+    border-top: 2px solid rgb(236, 234, 234);
+}
+
+.questions{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.questions span{
+    font-weight: bold;
+}
+
+.toggle-btn{
+    border: none;
+    border-radius: 50px;
+    font-size: 25px;
+}
+
+.toggle-btn.collapsed {
+    background-color: var(--section-background);
+    color: var(--primary-color);
+    padding: 0 10px;
+  }
+
+  .toggle-btn.expanded {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 2px 14px;
+  }
+
+.faq-box{
+    border: 1px solid rgb(221, 218, 218);
+    border-radius: 10px;
+    color: var(--secondary-color);
+    padding: 5px 20px;
+}
+.faq-items{
+    border-bottom: 2px solid rgb(236, 234, 234);
+}
+
