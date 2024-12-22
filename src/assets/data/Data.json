@@ -1,521 +1,545 @@
 {
   "popularThingsToDo": [
-    { "id": 1, "title": "Cruises", "image": "1 (1).jpg" },
-    { "id": 2, "title": "Beach Tours", "image": "1 (2).jpg" },
-    { "id": 3, "title": "City Tours", "image": "2 (2).jpg" },
-    { "id": 4, "title": "Museum Tours", "image": "4 (1).jpg" },
-    { "id": 5, "title": "Food", "image": "5.jpg" },
-    { "id": 6, "title": "Hiking", "image": "6.jpg" }
-  ],
+  { "id": 1, "title": "Cruises", "image": "1 (1).jpg" },
+  { "id": 2, "title": "Beach Tours", "image": "1 (2).jpg" },
+  { "id": 3, "title": "City Tours", "image": "2 (2).jpg" },
+  { "id": 4, "title": "Museum Tours", "image": "4 (1).jpg" },
+  { "id": 5, "title": "Food", "image": "5.jpg" },
+  { "id": 6, "title": "Hiking", "image": "6.jpg" }
+],
 
-  "whyChooseTourz": [
-    {
-      "id": 1,
-      "title": "Ultimate Flexibility",
-      "description": "Plan a customized tour according to your preference with our experts.",
-      "icon": "ticket.svg"
-    },
-    {
-      "id": 2,
-      "title": "Memorable Experiences",
-      "description": "Immerse yourself in new cultures and traditions.",
-      "icon": "hot-air-ballon.svg"
-    },
-    {
-      "id": 3,
-      "title": "Quality at Our Core",
-      "description": "Enjoy luxury at its best while traveling.",
-      "icon": "diamond.svg"
-    },
-    {
-      "id": 4,
-      "title": "Award-Winning Support",
-      "description": "24/7 customer support for all your needs.",
-      "icon": "medal.svg"
-    }
-  ],
+"whyChooseTourz": [
+  {
+    "id": 1,
+    "title": "Ultimate Flexibility",
+    "description": "Plan a customized tour according to your preference with our experts.",
+    "icon": "ticket.svg"
+  },
+  {
+    "id": 2,
+    "title": "Memorable Experiences",
+    "description": "Immerse yourself in new cultures and traditions.",
+    "icon": "hot-air-ballon.svg"
+  },
+  {
+    "id": 3,
+    "title": "Quality at Our Core",
+    "description": "Enjoy luxury at its best while traveling.",
+    "icon": "diamond.svg"
+  },
+  {
+    "id": 4,
+    "title": "Award-Winning Support",
+    "description": "24/7 customer support for all your needs.",
+    "icon": "medal.svg"
+  }
+],
 
-  "trendingDestinations": [
-    { "id": 1, "destination": "Bali", "days": "6+ Days", "image": "1 (2).jpg" },
-    { "id": 2, "destination": "Rome", "days": "5+ Days", "image": "2 (2).jpg" },
-    { "id": 3, "destination": "Phuket", "days": "4+ Days", "image": "6.jpg" },
-    { "id": 4, "destination": "Paris", "days": "5+ Days", "image": "1 (1).jpg" }
-  ],
+"trendingDestinations": [
+  { "id": 1, "destination": "Bali", "days": "6+ Days", "image": "1 (2).jpg" },
+  { "id": 2, "destination": "Rome", "days": "5+ Days", "image": "2 (2).jpg" },
+  { "id": 3, "destination": "Phuket", "days": "4+ Days", "image": "6.jpg" },
+  { "id": 4, "destination": "Paris", "days": "5+ Days", "image": "1 (1).jpg" }
+],
 
-  "travelArticles": [
-    {
-      "id": 1,
-      "title": "Safari Tours: Explore the Best African Safari Experience",
-      "date": "June 2023",
-      "image": "https://placehold.co/300x200"
-    },
-    {
-      "id": 2,
-      "title": "Exploring the Savannahs: A Wildlife Adventure",
-      "date": "July 2023",
-      "image": "https://placehold.co/300x200"
-    },
-    {
-      "id": 3,
-      "title": "Into the Wild: An Unforgettable Journey",
-      "date": "August 2023",
-      "image": "https://placehold.co/300x200"
-    }
-  ],
+"travelArticles": [
+  {
+    "id": 1,
+    "title": "Safari Tours: Explore the Best African Safari Experience",
+    "date": "June 2023",
+    "image": "https://placehold.co/300x200"
+  },
+  {
+    "id": 2,
+    "title": "Exploring the Savannahs: A Wildlife Adventure",
+    "date": "July 2023",
+    "image": "https://placehold.co/300x200"
+  },
+  {
+    "id": 3,
+    "title": "Into the Wild: An Unforgettable Journey",
+    "date": "August 2023",
+    "image": "https://placehold.co/300x200"
+  }
+],
 
-  "featuredTrips": [
-    {
-      "id": 1,
-      "destination": "Paris, France",
-      "title": "Centipede Tour – Guided Arizona Desert Tour by ATV",
-      "rating": 4.8,
-      "reviews": 243,
-      "duration": "4 days",
-      "price": 189.25,
-      "currency": "USD",
-      "image": "1.jpg"
-    },
-    {
-      "id": 2,
-      "destination": "New York, USA",
-      "title": "Molokini and Turtle Town Snorkeling Adventure Aboard",
-      "rating": 4.8,
-      "reviews": 243,
-      "duration": "4 days",
-      "price": 225,
-      "currency": "USD",
-      "image": "2.jpg"
-    },
-    {
-      "id": 3,
-      "destination": "London, UK",
-      "title": "Westminster Walking Tour & Westminster Abbey Entry",
-      "rating": 4.8,
-      "reviews": 243,
-      "duration": "4 days",
-      "price": 943,
-      "currency": "USD",
-      "image": "3.jpg"
-    },
-    {
-      "id": 4,
-      "destination": "New York, USA",
-      "title": "All Inclusive Ultimate Circle Island Day Tour with Lunch",
-      "rating": 4.8,
-      "reviews": 243,
-      "duration": "4 days",
-      "price": 771,
-      "currency": "USD",
-      "image": "4.jpg"
-    },
-    {
-      "id": 5,
-      "destination": "Paris, France",
-      "title": "Space Center Houston Admission Ticket",
-      "rating": 4.8,
-      "reviews": 243,
-      "duration": "4 days",
-      "price": 189.25,
-      "currency": "USD",
-      "image": "1.jpg"
-    },
-    {
-      "id": 6,
-      "destination": "New York, USA",
-      "title": "Clear Kayak Tour of Shell Key Preserve and Tampa Bay Area",
-      "rating": 4.8,
-      "reviews": 243,
-      "duration": "4 days",
-      "price": 225,
-      "currency": "USD",
-      "image": "2.jpg"
-    },
-    {
-      "id": 7,
-      "destination": "London, UK",
-      "title": "History and Hauntings of Salem Guided Walking Tour",
-      "rating": 4.8,
-      "reviews": 243,
-      "duration": "4 days",
-      "price": 943,
-      "currency": "USD",
-      "image": "3.jpg"
-    },
-    {
-      "id": 8,
-      "destination": "New York, USA",
-      "title": "Mauna Kea Summit Sunset and Stars Free Astro Photos Hilo Kona Waikoloo Pick Up",
-      "rating": 4.8,
-      "reviews": 243,
-      "duration": "4 days",
-      "price": 771,
-      "currency": "USD",
-      "image": "4.jpg"
-    }
-  ],
+"featuredTrips": [
+  {
+    "id": 1,
+    "destination": "Paris, France",
+    "title": "Centipede Tour – Guided Arizona Desert Tour by ATV",
+    "rating": 4.8,
+    "reviews": 243,
+    "duration": "4 days",
+    "price": 189.25,
+    "currency": "USD",
+    "image": "1.jpg"
+  },
+  {
+    "id": 2,
+    "destination": "New York, USA",
+    "title": "Molokini and Turtle Town Snorkeling Adventure Aboard",
+    "rating": 4.8,
+    "reviews": 243,
+    "duration": "4 days",
+    "price": 225,
+    "currency": "USD",
+    "image": "2.jpg"
+  },
+  {
+    "id": 3,
+    "destination": "London, UK",
+    "title": "Westminster Walking Tour & Westminster Abbey Entry",
+    "rating": 4.8,
+    "reviews": 243,
+    "duration": "4 days",
+    "price": 943,
+    "currency": "USD",
+    "image": "3.jpg"
+  },
+  {
+    "id": 4,
+    "destination": "New York, USA",
+    "title": "All Inclusive Ultimate Circle Island Day Tour with Lunch",
+    "rating": 4.8,
+    "reviews": 243,
+    "duration": "4 days",
+    "price": 771,
+    "currency": "USD",
+    "image": "4.jpg"
+  },
+  {
+    "id": 5,
+    "destination": "Paris, France",
+    "title": "Space Center Houston Admission Ticket",
+    "rating": 4.8,
+    "reviews": 243,
+    "duration": "4 days",
+    "price": 189.25,
+    "currency": "USD",
+    "image": "1.jpg"
+  },
+  {
+    "id": 6,
+    "destination": "New York, USA",
+    "title": "Clear Kayak Tour of Shell Key Preserve and Tampa Bay Area",
+    "rating": 4.8,
+    "reviews": 243,
+    "duration": "4 days",
+    "price": 225,
+    "currency": "USD",
+    "image": "2.jpg"
+  },
+  {
+    "id": 7,
+    "destination": "London, UK",
+    "title": "History and Hauntings of Salem Guided Walking Tour",
+    "rating": 4.8,
+    "reviews": 243,
+    "duration": "4 days",
+    "price": 943,
+    "currency": "USD",
+    "image": "3.jpg"
+  },
+  {
+    "id": 8,
+    "destination": "New York, USA",
+    "title": "Mauna Kea Summit Sunset and Stars Free Astro Photos Hilo Kona Waikoloo Pick Up",
+    "rating": 4.8,
+    "reviews": 243,
+    "duration": "4 days",
+    "price": 771,
+    "currency": "USD",
+    "image": "4.jpg"
+  }
+],
 
   "hotels": [
-    {
-      "id": 1,
-      "name": "Luxury Stay Hotel",
-      "description": "A five-star hotel offering premium amenities and world-class service.",
-      "image": "https://placehold.co/300x200",
-      "location": {
-        "address": "123 Main Street, Downtown City",
-        "city": "New York",
-        "state": "NY",
-        "country": "USA",
-        "zip_code": "10001",
-        "latitude": 40.712776,
-        "longitude": -74.005974
-      },
-      "amenities": [
-        "Free Wi-Fi",
-        "Swimming Pool",
-        "Spa",
-        "Gym",
-        "24/7 Room Service"
-      ],
-      "price_per_night": 200,
-      "rating": 4.5,
-      "available_rooms": 15,
-      "images": [
-        "https://example.com/images/luxury1.jpg",
-        "https://example.com/images/luxury2.jpg"
-      ],
-      "contact_info": {
-        "phone": "+1 234 567 890",
-        "email": "info@luxurystayhotel.com"
-      }
+  {
+    "id": 1,
+    "name": "Luxury Stay Hotel",
+    "description": "A five-star hotel offering premium amenities and world-class service.",
+    "image": "https://placehold.co/300x200",
+    "location": {
+      "address": "123 Main Street, Downtown City",
+      "city": "New York",
+      "state": "NY",
+      "country": "USA",
+      "zip_code": "10001",
+      "latitude": 40.712776,
+      "longitude": -74.005974
     },
-    {
-      "id": 2,
-      "name": "Cozy Inn",
-      "description": "A comfortable and budget-friendly option for travelers.",
-      "image": "https://placehold.co/300x200",
-      "location": {
-        "address": "456 Elm Street",
-        "city": "San Francisco",
-        "state": "CA",
-        "country": "USA",
-        "zip_code": "94101",
-        "latitude": 37.774929,
-        "longitude": -122.419418
-      },
-      "amenities": ["Free Breakfast", "Pet-Friendly", "Parking", "Free Wi-Fi"],
-      "price_per_night": 90,
-      "rating": 4.2,
-      "available_rooms": 20,
-      "images": [
-        "https://example.com/images/cozy1.jpg",
-        "https://example.com/images/cozy2.jpg"
-      ],
-      "contact_info": {
-        "phone": "+1 987 654 321",
-        "email": "contact@cozyinn.com"
-      }
-    },
-    {
-      "id": 3,
-      "name": "Seaside Resort",
-      "description": "Enjoy a relaxing vacation with oceanfront views and luxurious amenities.",
-      "image": "https://placehold.co/300x200",
-      "location": {
-        "address": "789 Beachside Blvd",
-        "city": "Miami",
-        "state": "FL",
-        "country": "USA",
-        "zip_code": "33101",
-        "latitude": 25.76168,
-        "longitude": -80.19179
-      },
-      "amenities": [
-        "Private Beach",
-        "Swimming Pool",
-        "Restaurant",
-        "Bar",
-        "Free Parking",
-        "Spa"
-      ],
-      "price_per_night": 300,
-      "rating": 4.8,
-      "available_rooms": 10,
-      "images": [
-        "https://example.com/images/seaside1.jpg",
-        "https://example.com/images/seaside2.jpg"
-      ],
-      "contact_info": {
-        "phone": "+1 555 123 456",
-        "email": "reservations@seasideresort.com"
-      }
-    },
-    {
-      "id": 4,
-      "name": "Urban Retreat",
-      "description": "A trendy hotel located in the heart of the city.",
-      "image": "https://placehold.co/300x200",
-      "location": {
-        "address": "101 City Center",
-        "city": "Chicago",
-        "state": "IL",
-        "country": "USA",
-        "zip_code": "60601",
-        "latitude": 41.878113,
-        "longitude": -87.629799
-      },
-      "amenities": ["Free Wi-Fi", "Gym", "Restaurant", "Bar"],
-      "price_per_night": 150,
-      "rating": 4.3,
-      "available_rooms": 25,
-      "images": [
-        "https://example.com/images/urban1.jpg",
-        "https://example.com/images/urban2.jpg"
-      ],
-      "contact_info": {
-        "phone": "+1 312 555 7890",
-        "email": "info@urbanretreat.com"
-      }
-    },
-    {
-      "id": 5,
-      "name": "Mountain Lodge",
-      "description": "A cozy lodge with stunning mountain views.",
-      "image": "https://placehold.co/300x200",
-      "location": {
-        "address": "12 Alpine Way",
-        "city": "Denver",
-        "state": "CO",
-        "country": "USA",
-        "zip_code": "80202",
-        "latitude": 39.739236,
-        "longitude": -104.990251
-      },
-      "amenities": ["Ski Access", "Spa", "Fireplace", "Free Breakfast"],
-      "price_per_night": 180,
-      "rating": 4.6,
-      "available_rooms": 12,
-      "images": [
-        "https://example.com/images/mountain1.jpg",
-        "https://example.com/images/mountain2.jpg"
-      ],
-      "contact_info": {
-        "phone": "+1 720 555 4321",
-        "email": "contact@mountainlodge.com"
-      }
-    },
-    {
-      "id": 6,
-      "name": "Desert Oasis",
-      "description": "A luxurious retreat in the desert with serene surroundings.",
-      "image": "https://placehold.co/300x200",
-      "location": {
-        "address": "456 Sand Dunes Rd",
-        "city": "Phoenix",
-        "state": "AZ",
-        "country": "USA",
-        "zip_code": "85001",
-        "latitude": 33.448376,
-        "longitude": -112.074036
-      },
-      "amenities": ["Pool", "Spa", "Yoga Classes", "Bar"],
-      "price_per_night": 250,
-      "rating": 4.7,
-      "available_rooms": 8,
-      "images": [
-        "https://example.com/images/desert1.jpg",
-        "https://example.com/images/desert2.jpg"
-      ],
-      "contact_info": {
-        "phone": "+1 602 555 6789",
-        "email": "reservations@desertoasis.com"
-      }
-    },
-    {
-      "id": 7,
-      "name": "Historic Inn",
-      "description": "A charming inn with a rich history and vintage decor.",
-      "image": "https://placehold.co/300x200",
-      "location": {
-        "address": "789 Heritage Lane",
-        "city": "Boston",
-        "state": "MA",
-        "country": "USA",
-        "zip_code": "02101",
-        "latitude": 42.360082,
-        "longitude": -71.05888
-      },
-      "amenities": ["Free Breakfast", "Library", "Garden"],
-      "price_per_night": 120,
-      "rating": 4.4,
-      "available_rooms": 18,
-      "images": [
-        "https://example.com/images/historic1.jpg",
-        "https://example.com/images/historic2.jpg"
-      ],
-      "contact_info": {
-        "phone": "+1 617 555 9876",
-        "email": "info@historicinn.com"
-      }
-    },
-    {
-      "id": 8,
-      "name": "Eco Resort",
-      "description": "A sustainable resort surrounded by nature.",
-      "image": "https://placehold.co/300x200",
-      "location": {
-        "address": "321 Greenway Rd",
-        "city": "Seattle",
-        "state": "WA",
-        "country": "USA",
-        "zip_code": "98101",
-        "latitude": 47.606209,
-        "longitude": -122.332069
-      },
-      "amenities": ["Organic Food", "Solar Power", "Nature Trails"],
-      "price_per_night": 220,
-      "rating": 4.8,
-      "available_rooms": 10,
-      "images": [
-        "https://example.com/images/eco1.jpg",
-        "https://example.com/images/eco2.jpg"
-      ],
-      "contact_info": {
-        "phone": "+1 206 555 4321",
-        "email": "contact@ecoresort.com"
-      }
-    }
-  ],
-
-  "users": [
-    {
-      "id": 1,
-      "name": "Alice Johnson",
-      "email": "alice.johnson@example.com",
-      "phone": "+1 123 456 789",
-      "role": "Guest",
-      "preferences": ["Pool Access", "Ocean View"]
-    },
-    {
-      "id": 2,
-      "name": "Bob Smith",
-      "email": "bob.smith@example.com",
-      "phone": "+1 987 654 321",
-      "role": "Guest",
-      "preferences": ["Free Wi-Fi", "Close to City Center"]
-    },
-    {
-      "id": 3,
-      "name": "Charlie Brown",
-      "email": "charlie.brown@example.com",
+    "amenities": [
+      "Free Wi-Fi",
+      "Swimming Pool",
+      "Spa",
+      "Gym",
+      "24/7 Room Service"
+    ],
+    "price_per_night": 200,
+    "rating": 4.5,
+    "available_rooms": 15,
+    "images": [
+      "https://example.com/images/luxury1.jpg",
+      "https://example.com/images/luxury2.jpg"
+    ],
+    "contact_info": {
       "phone": "+1 234 567 890",
-      "role": "Admin",
-      "preferences": ["Admin Access", "Premium Features"]
-    },
-    {
-      "id": 4,
-      "name": "Diana Prince",
-      "email": "diana.prince@example.com",
-      "phone": "+1 345 678 901",
-      "role": "Manager",
-      "preferences": ["Manage Rooms", "Handle Reservations"]
-    },
-    {
-      "id": 5,
-      "name": "Ethan Hunt",
-      "email": "ethan.hunt@example.com",
-      "phone": "+1 456 789 012",
-      "role": "Guest",
-      "preferences": ["Adventure Activities", "Mountain Views"]
-    },
-    {
-      "id": 6,
-      "name": "Fiona Gallagher",
-      "email": "fiona.gallagher@example.com",
-      "phone": "+1 567 890 123",
-      "role": "Guest",
-      "preferences": ["Pet-Friendly Rooms", "Budget Options"]
-    },
-    {
-      "id": 7,
-      "name": "George Bailey",
-      "email": "george.bailey@example.com",
-      "phone": "+1 678 901 234",
-      "role": "Support",
-      "preferences": ["Customer Assistance", "Issue Resolution"]
+      "email": "info@luxurystayhotel.com"
     }
-  ],
-  "hotelPosts": [
-    {
-      "id": 1,
-      "title": "Kenya vs Tanzania Safari: The Better African Safari Experience",
-      "date": "April 06 2023",
-      "author": "Ali Tufan",
-      "description": "Explore the ultimate safari destinations in Africa.",
-      "image": "../images/1_dis.png"
+  },
+  {
+    "id": 2,
+    "name": "Cozy Inn",
+    "description": "A comfortable and budget-friendly option for travelers.",
+    "image": "https://placehold.co/300x200",
+    "location": {
+      "address": "456 Elm Street",
+      "city": "San Francisco",
+      "state": "CA",
+      "country": "USA",
+      "zip_code": "94101",
+      "latitude": 37.774929,
+      "longitude": -122.419418
     },
-    {
-      "id": 2,
-      "title": "Exploring the Serengeti: A Wildlife Adventure",
-      "date": "April 07 2023",
-      "author": "Emily Johnson",
-      "description": "Discover the wonders of Serengeti's wildlife.",
-      "image": "../images/2_dis.png"
-    },
-    {
-      "id": 3,
-      "title": "Into the Wild: An Unforgettable Safari Journey",
-      "date": "April 08 2023",
-      "author": "Maxwell Rhodes",
-      "description": "Experience the adventure of a lifetime.",
-      "image": "../images/3_dis.png"
-    },
-    {
-      "id": 4,
-      "title": "Safari Photography: Capturing the Essence of Wildlife",
-      "date": "April 09 2023",
-      "author": "Sophia Martinez",
-      "description": "Learn tips to take stunning safari photos.",
-      "image": "../images/4_dis.png"
-    },
-    {
-      "id": 5,
-      "title": "Surviving the Safari: A Comprehensive Guide",
-      "date": "April 10 2023",
-      "author": "Elijah Williams",
-      "description": "Prepare yourself for the ultimate adventure.",
-      "image": "../images/5_dis.png"
-    },
-    {
-      "id": 6,
-      "title": "Luxury Safari Experience: Where Comfort Meets Wilderness",
-      "date": "April 11 2023",
-      "author": "Ava Thompson",
-      "description": "Enjoy luxury and adventure together.",
-      "image": "../images/6_dis.png"
-    },
-    {
-      "id": 7,
-      "title": "African Safari: A Journey Through Nature's Wonders",
-      "date": "April 12 2023",
-      "author": "Oliver Davis",
-      "description": "Explore Africa's breathtaking landscapes.",
-      "image": "../images/7_dis.png"
-    },
-    {
-      "id": 8,
-      "title": "Safari Camping Tips: Making the Most of the Wild Outdoors",
-      "date": "April 13 2023",
-      "author": "Harper Garcia",
-      "description": "Tips for an unforgettable camping safari.",
-      "image": "../images/8_dis.png"
-    },
-    {
-      "id": 9,
-      "title": "The Beauty of Wildlife: A Safari Perspective",
-      "date": "April 14 2023",
-      "author": "Evelyn Cooper",
-      "description": "Discover the wonders of wildlife photography.",
-      "image": "../images/9_dis.png"
+    "amenities": [
+      "Free Breakfast",
+      "Pet-Friendly",
+      "Parking",
+      "Free Wi-Fi"
+    ],
+    "price_per_night": 90,
+    "rating": 4.2,
+    "available_rooms": 20,
+    "images": [
+      "https://example.com/images/cozy1.jpg",
+      "https://example.com/images/cozy2.jpg"
+    ],
+    "contact_info": {
+      "phone": "+1 987 654 321",
+      "email": "contact@cozyinn.com"
     }
-  ]
+  },
+  {
+    "id": 3,
+    "name": "Seaside Resort",
+    "description": "Enjoy a relaxing vacation with oceanfront views and luxurious amenities.",
+    "image": "https://placehold.co/300x200",
+    "location": {
+      "address": "789 Beachside Blvd",
+      "city": "Miami",
+      "state": "FL",
+      "country": "USA",
+      "zip_code": "33101",
+      "latitude": 25.761680,
+      "longitude": -80.191790
+    },
+    "amenities": [
+      "Private Beach",
+      "Swimming Pool",
+      "Restaurant",
+      "Bar",
+      "Free Parking",
+      "Spa"
+    ],
+    "price_per_night": 300,
+    "rating": 4.8,
+    "available_rooms": 10,
+    "images": [
+      "https://example.com/images/seaside1.jpg",
+      "https://example.com/images/seaside2.jpg"
+    ],
+    "contact_info": {
+      "phone": "+1 555 123 456",
+      "email": "reservations@seasideresort.com"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Urban Retreat",
+    "description": "A trendy hotel located in the heart of the city.",
+    "image": "https://placehold.co/300x200",
+    "location": {
+      "address": "101 City Center",
+      "city": "Chicago",
+      "state": "IL",
+      "country": "USA",
+      "zip_code": "60601",
+      "latitude": 41.878113,
+      "longitude": -87.629799
+    },
+    "amenities": ["Free Wi-Fi", "Gym", "Restaurant", "Bar"],
+    "price_per_night": 150,
+    "rating": 4.3,
+    "available_rooms": 25,
+    "images": [
+      "https://example.com/images/urban1.jpg",
+      "https://example.com/images/urban2.jpg"
+    ],
+    "contact_info": {
+      "phone": "+1 312 555 7890",
+      "email": "info@urbanretreat.com"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Mountain Lodge",
+    "description": "A cozy lodge with stunning mountain views.",
+    "image": "https://placehold.co/300x200",
+    "location": {
+      "address": "12 Alpine Way",
+      "city": "Denver",
+      "state": "CO",
+      "country": "USA",
+      "zip_code": "80202",
+      "latitude": 39.739236,
+      "longitude": -104.990251
+    },
+    "amenities": ["Ski Access", "Spa", "Fireplace", "Free Breakfast"],
+    "price_per_night": 180,
+    "rating": 4.6,
+    "available_rooms": 12,
+    "images": [
+      "https://example.com/images/mountain1.jpg",
+      "https://example.com/images/mountain2.jpg"
+    ],
+    "contact_info": {
+      "phone": "+1 720 555 4321",
+      "email": "contact@mountainlodge.com"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Desert Oasis",
+    "description": "A luxurious retreat in the desert with serene surroundings.",
+    "image": "https://placehold.co/300x200",
+    "location": {
+      "address": "456 Sand Dunes Rd",
+      "city": "Phoenix",
+      "state": "AZ",
+      "country": "USA",
+      "zip_code": "85001",
+      "latitude": 33.448376,
+      "longitude": -112.074036
+    },
+    "amenities": ["Pool", "Spa", "Yoga Classes", "Bar"],
+    "price_per_night": 250,
+    "rating": 4.7,
+    "available_rooms": 8,
+    "images": [
+      "https://example.com/images/desert1.jpg",
+      "https://example.com/images/desert2.jpg"
+    ],
+    "contact_info": {
+      "phone": "+1 602 555 6789",
+      "email": "reservations@desertoasis.com"
+    }
+  },
+  {
+    "id": 7,
+    "name": "Historic Inn",
+    "description": "A charming inn with a rich history and vintage decor.",
+    "image": "https://placehold.co/300x200",
+    "location": {
+      "address": "789 Heritage Lane",
+      "city": "Boston",
+      "state": "MA",
+      "country": "USA",
+      "zip_code": "02101",
+      "latitude": 42.360082,
+      "longitude": -71.058880
+    },
+    "amenities": ["Free Breakfast", "Library", "Garden"],
+    "price_per_night": 120,
+    "rating": 4.4,
+    "available_rooms": 18,
+    "images": [
+      "https://example.com/images/historic1.jpg",
+      "https://example.com/images/historic2.jpg"
+    ],
+    "contact_info": {
+      "phone": "+1 617 555 9876",
+      "email": "info@historicinn.com"
+    }
+  },
+  {
+    "id": 8,
+    "name": "Eco Resort",
+    "description": "A sustainable resort surrounded by nature.",
+    "image": "https://placehold.co/300x200",
+    "location": {
+      "address": "321 Greenway Rd",
+      "city": "Seattle",
+      "state": "WA",
+      "country": "USA",
+      "zip_code": "98101",
+      "latitude": 47.606209,
+      "longitude": -122.332069
+    },
+    "amenities": ["Organic Food", "Solar Power", "Nature Trails"],
+    "price_per_night": 220,
+    "rating": 4.8,
+    "available_rooms": 10,
+    "images": [
+      "https://example.com/images/eco1.jpg",
+      "https://example.com/images/eco2.jpg"
+    ],
+    "contact_info": {
+      "phone": "+1 206 555 4321",
+      "email": "contact@ecoresort.com"
+    }
+  }
+],
+
+"users": [
+  {
+    "id": 1,
+    "name": "Alice Johnson",
+    "email": "alice.johnson@example.com",
+    "phone": "+1 123 456 789",
+    "role": "Guest",
+    "preferences": ["Pool Access", "Ocean View"]
+  },
+  {
+    "id": 2,
+    "name": "Bob Smith",
+    "email": "bob.smith@example.com",
+    "phone": "+1 987 654 321",
+    "role": "Guest",
+    "preferences": ["Free Wi-Fi", "Close to City Center"]
+  },
+  {
+    "id": 3,
+    "name": "Charlie Brown",
+    "email": "charlie.brown@example.com",
+    "phone": "+1 234 567 890",
+    "role": "Admin",
+    "preferences": ["Admin Access", "Premium Features"]
+  },
+  {
+    "id": 4,
+    "name": "Diana Prince",
+    "email": "diana.prince@example.com",
+    "phone": "+1 345 678 901",
+    "role": "Manager",
+    "preferences": ["Manage Rooms", "Handle Reservations"]
+  },
+  {
+    "id": 5,
+    "name": "Ethan Hunt",
+    "email": "ethan.hunt@example.com",
+    "phone": "+1 456 789 012",
+    "role": "Guest",
+    "preferences": ["Adventure Activities", "Mountain Views"]
+  },
+  {
+    "id": 6,
+    "name": "Fiona Gallagher",
+    "email": "fiona.gallagher@example.com",
+    "phone": "+1 567 890 123",
+    "role": "Guest",
+    "preferences": ["Pet-Friendly Rooms", "Budget Options"]
+  },
+  {
+    "id": 7,
+    "name": "George Bailey",
+    "email": "george.bailey@example.com",
+    "phone": "+1 678 901 234",
+    "role": "Support",
+    "preferences": ["Customer Assistance", "Issue Resolution"]
+  }
+],
+
+"tripPosts": [
+  {
+    "id": 1,
+    "title": "Kenya vs Tanzania Safari: The Better African Safari Experience",
+    "date": "April 06 2023",
+    "author": "Ali Tufan",
+    "description": "Explore the ultimate safari destinations in Africa.",
+    "mainImage": "1_dis.png",
+    "detailsImage1":"1_dis.png",
+    "detailsImage2":"8_dis.png"
+  },
+  {
+    "id": 2,
+    "title": "Exploring the Serengeti: A Wildlife Adventure",
+    "date": "April 07 2023",
+    "author": "Emily Johnson",
+    "description": "Discover the wonders of Serengeti's wildlife.",
+    "mainImage": "2_dis.png",
+    "detailsImage1":"2_dis.png",
+    "detailsImage2":"5_dis.png"
+  },
+  {
+    "id": 3,
+    "title": "Into the Wild: An Unforgettable Safari Journey",
+    "date": "April 08 2023",
+    "author": "Maxwell Rhodes",
+    "description": "Experience the adventure of a lifetime.",
+    "mainImage": "3_dis.png",
+    "detailsImage1":"3_dis.png",
+    "detailsImage2":"8_dis.png"
+  },
+  {
+    "id": 4,
+    "title": "Safari Photography: Capturing the Essence of Wildlife",
+    "date": "April 09 2023",
+    "author": "Sophia Martinez",
+    "description": "Learn tips to take stunning safari photos.",
+    "mainImage": "4_dis.png",
+     "detailsImage1":"4_dis.png",
+    "detailsImage2":"6_dis.png"
+  },
+  {
+    "id": 5,
+    "title": "Surviving the Safari: A Comprehensive Guide",
+    "date": "April 10 2023",
+    "author": "Elijah Williams",
+    "description": "Prepare yourself for the ultimate adventure.",
+    "mainImage": "5_dis.png",
+    "detailsImage1":"5_dis.png",
+    "detailsImage2":"1_dis.png"
+  },
+  {
+    "id": 6,
+    "title": "Luxury Safari Experience: Where Comfort Meets Wilderness",
+    "date": "April 11 2023",
+    "author": "Ava Thompson",
+    "description": "Enjoy luxury and adventure together.",
+    "mainImage": "6_dis.png",
+     "detailsImage1":"6_dis.png",
+    "detailsImage2":"2_dis.png"
+  },
+  {
+    "id": 7,
+    "title": "African Safari: A Journey Through Nature's Wonders",
+    "date": "April 12 2023",
+    "author": "Oliver Davis",
+    "description": "Explore Africa's breathtaking landscapes.",
+    "mainImage": "7_dis.png",
+     "detailsImage1":"7_dis.png",
+    "detailsImage2":"9_dis.png"
+  },
+  {
+    "id": 8,
+    "title": "Safari Camping Tips: Making the Most of the Wild Outdoors",
+    "date": "April 13 2023",
+    "author": "Harper Garcia",
+    "description": "Tips for an unforgettable camping safari.",
+    "mainImage": "8_dis.png",
+     "detailsImage1":"8_dis.png",
+    "detailsImage2":"1_dis.png"
+  },
+  {
+    "id": 9,
+    "title": "The Beauty of Wildlife: A Safari Perspective",
+    "date": "April 14 2023",
+    "author": "Evelyn Cooper",
+    "description": "Discover the wonders of wildlife photography.",
+    "mainImage": "9_dis.png",
+     "detailsImage1":"9_dis.png",
+    "detailsImage2":"4_dis.png"
+  }
+]
 }
