@@ -11,11 +11,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
 }
 
 .questions span{
     font-weight: bold;
+    color: var(--secondary-color);
 }
 
 .toggle-btn{
