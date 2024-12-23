@@ -9,8 +9,9 @@
     width: 100%;
     height: auto;
     position: absolute;
-    bottom: 0;
+    bottom: -10px;
     left: 0;
-    background-color: var(--background-color);
-    z-index: 99;
+    z-index: 10;
+    pointer-events: none;
+    background-color: transparent;
 }
