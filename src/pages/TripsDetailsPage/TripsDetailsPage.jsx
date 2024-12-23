@@ -21,7 +21,7 @@ const validationSchema = Yup.object({
 });
 
 const TripsDetailsPage = () => {
-  const trip = data.tripPosts[2];
+  const trip = data.tripPosts[4];
 
   if (!trip) {
     return <div>Trip not found</div>;
