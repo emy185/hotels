@@ -9,9 +9,10 @@ import WaveSVG from "../../assets/images/shape.svg";
 function Footer() {
   return (
     <>
-      <div className={`${styles.container}`}> 
+      <div className={`${styles.container}`}>
         <div className={`${styles.footer} mx-4 py-4`}>
           <Container>
+            <br />
             <div>
               <img
                 src={WaveSVG}
@@ -41,7 +42,9 @@ function Footer() {
             <Row className="justify-content-between">
               <Col md={4}>
                 <h5>Contact</h5>
-                <p>328 Queensberry Street, North Melbourne VIC3051, Australia.</p>
+                <p>
+                  328 Queensberry Street, North Melbourne VIC3051, Australia.
+                </p>
                 <p>hi@viatours.com</p>
               </Col>
 
@@ -74,7 +77,10 @@ function Footer() {
                     placeholder="Your email address"
                     className="border-0 shadow-none"
                   />
-                  <Button variant="outline-primary" className={`${styles.btn} fw-bold`}>
+                  <Button
+                    variant="outline-primary"
+                    className={`${styles.btn} fw-bold`}
+                  >
                     Send
                   </Button>
                 </InputGroup>
@@ -92,20 +98,19 @@ function Footer() {
             </Row>
           </Container>
         </div>
-        </div>
-        <Container>
-          <Row className="align-items-center justify-content-between py-2">
-            <Col md={6}>
-              <p>&copy; Copyright Viatours 2024</p>
-            </Col>
-            <Col md={2} className="d-flex justify-content-end gap-2">
-              <img src={visa} alt="Visa" />
-              <img src={discover} alt="Discover" />
-              <img src={applePay} alt="Apple Pay" />
-            </Col>
-          </Row>
-        </Container>
-     
+      </div>
+      <Container>
+        <Row className="align-items-center justify-content-between py-2">
+          <Col md={6}>
+            <p>&copy; Copyright Viatours 2024</p>
+          </Col>
+          <Col md={2} className="d-flex justify-content-end gap-2">
+            <img src={visa} alt="Visa" />
+            <img src={discover} alt="Discover" />
+            <img src={applePay} alt="Apple Pay" />
+          </Col>
+        </Row>
+      </Container>
     </>
   );
 }
