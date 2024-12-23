@@ -12,6 +12,7 @@ function Footer() {
       <div className={`${styles.container}`}>
         <div className={`${styles.footer} mx-4 py-4`}>
           <Container>
+            <br />
             <div>
               <img
                 src={WaveSVG}
@@ -76,7 +77,10 @@ function Footer() {
                     placeholder="Your email address"
                     className="border-0 shadow-none"
                   />
-                  <Button variant="outline-primary" className={`${styles.btn} fw-bold`}>
+                  <Button
+                    variant="outline-primary"
+                    className={`${styles.btn} fw-bold`}
+                  >
                     Send
                   </Button>
                 </InputGroup>
