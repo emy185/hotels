@@ -4,6 +4,7 @@ import Tour from "../pages/Tour/Tour";
 import HotelDetail from "../pages/Details/HotelDetails";
 import TripsDetailsPage from "../pages/TripsDetailsPage/TripsDetailsPage";
 import Contact from "../pages/Contact/Contact";
+import BookingPage from "../pages/BookingPage/BookingPage";
 
 function RoutesConfig() {
   return (
@@ -12,6 +13,7 @@ function RoutesConfig() {
         <Route path="/HotelDetails" element={<HotelDetail/>}/>
         <Route path="/TripsDetailsPage" element={<TripsDetailsPage/>}/>
         <Route path="/Contact" element={<Contact />} />
+        <Route path="/BookingPage" element={<BookingPage />} />
       </Routes>
   );
 }
