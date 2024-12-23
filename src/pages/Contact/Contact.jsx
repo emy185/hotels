@@ -26,25 +26,24 @@ function Contact() {
   return (
     <>
       <Container>
-        <Row >
+        <Row>
           <Col xs={12} className="position-relative">
             <MapContainer
               center={[51.505, -0.09]}
               zoom={5}
               style={{ height: "300px", width: "100%" }}
+              className="z-0"
             >
               <TileLayer
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                 attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
               />
             </MapContainer>
-            <div>
-              <img
-                src={WaveSVG}
-                alt="Wave Shape"
-                className={`${styles.waveShape}`}
-              />
-            </div>
+            <img
+              src={WaveSVG}
+              alt="Wave Shape"
+              className={`${styles.waveShape}`}
+            />
           </Col>
         </Row>
         <Row className="text-center mt-5">
