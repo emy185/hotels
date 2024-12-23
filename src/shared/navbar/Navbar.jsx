@@ -19,7 +19,7 @@ function NavBar() {
               <Nav.Link href="#">Destination</Nav.Link>
               <Nav.Link href="#">Activities</Nav.Link>
               <Nav.Link href="#">About</Nav.Link>
-              <Nav.Link href="#">Contact</Nav.Link>
+              <Nav.Link href="/Contact">Contact</Nav.Link>
             </Nav>
             <Nav className="mb-2 mb-lg-0">
               <Nav.Link href="#">USD</Nav.Link>
