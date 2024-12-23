@@ -36,7 +36,7 @@ function Footer() {
               </Col>
             </Row>
 
-            <hr className="my-4" />
+            <hr className={`${styles.line} my-4`} />
 
             <Row className="justify-content-between">
               <Col md={4}>
@@ -76,7 +76,7 @@ function Footer() {
                     placeholder="Your email address"
                     className="border-0 shadow-none"
                   />
-                  <Button variant="outline-primary" className="fw-bold">
+                  <Button variant="outline-primary" className={`${styles.btn} fw-bold`}>
                     Send
                   </Button>
                 </InputGroup>
