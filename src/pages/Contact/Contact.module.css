@@ -1,6 +1,16 @@
 @import "../../styles/variables.css";
 
-.bgcolor{
-    background-color: var(--primary-color) !important; 
-    color: var(--text-secondary) !important; 
+.bgcolor {
+    background-color: var(--primary-color) !important;
+    color: var(--text-secondary) !important;
+}
+
+.waveShape {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: var(--background-color);
+    z-index: 99;
 }

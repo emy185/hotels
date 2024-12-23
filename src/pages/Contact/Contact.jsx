@@ -3,6 +3,7 @@ import { MapContainer, TileLayer } from "react-leaflet";
 import { Container, Form, Button, Row, Col } from "react-bootstrap";
 import { Formik } from "formik";
 import * as Yup from "yup";
+import WaveSVG from "../../assets/images/shape.svg";
 import styles from "./Contact.module.css";
 
 const validationSchema = Yup.object().shape({
@@ -25,8 +26,8 @@ function Contact() {
   return (
     <>
       <Container>
-        <Row>
-          <Col xs={12}>
+        <Row >
+          <Col xs={12} className="position-relative">
             <MapContainer
               center={[51.505, -0.09]}
               zoom={5}
@@ -37,9 +38,15 @@ function Contact() {
                 attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
               />
             </MapContainer>
+            <div>
+              <img
+                src={WaveSVG}
+                alt="Wave Shape"
+                className={`${styles.waveShape}`}
+              />
+            </div>
           </Col>
         </Row>
-
         <Row className="text-center mt-5">
           <Col sm={3}>
             <h3>North America</h3>
