@@ -2,11 +2,8 @@ import React from "react";
 import styles from "./styles/DistinationHeader.module.css";
 import backgroundImage from "../../assets/images/header_dis.png";
 import WaveSVG from "../../assets/images/shape.svg";
-const DistinationHeader = () => {
-  const title = "Your guide to everywhere";
-  const subtitle =
-    "Find inspiration, guides and stories for wherever you're going. Select a destination.";
-
+const DistinationHeader = ( { title, subtitle }) => {
+  
   return (
     <div className={`${styles.customContainer} mx-auto`}>
       <div className={`rounded-4 overflow-hidden ${styles.header}`}>
