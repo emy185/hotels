@@ -6,6 +6,7 @@ import { Formik, Form as FormikForm, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import { ToastContainer, toast } from "react-toastify";
 import data from "../../assets/data/Data.json";
+import { useParams } from "react-router-dom";
 
 
 
@@ -21,7 +22,8 @@ const validationSchema = Yup.object({
 });
 
 const TripsDetailsPage = () => {
-  const trip = data.tripPosts[2];
+  const { id } = useParams(); 
+  const trip = data.tripPosts.find((trip) => trip.id === parseInt(id)); 
 
   if (!trip) {
     return <div>Trip not found</div>;
