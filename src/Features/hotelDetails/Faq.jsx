@@ -29,7 +29,7 @@ function Faq() {
   };
   return (
     <div className="faq pb-4 w-75">
-      <h1 className="pt-3 pb-4">FAQ</h1>
+      <h1 className="pt-5 pb-4">FAQ</h1>
       <div>
         <div className="pb-4 faq-items">
           {faqData.map((item, index) => (

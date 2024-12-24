@@ -2,6 +2,9 @@ import React from "react";
 import "./style.css";
 import map from "../../assets/images/map.png";
 import Faq from "../../Features/hotelDetails/Faq";
+import Reviews from "../../Features/hotelDetails/Reviews";
+import Suggestions from "../../Features/hotelDetails/Suggestions";
+import Details from "../../Features/hotelDetails/Details";
 
 function HotelDetail() {
   return (
@@ -24,12 +27,16 @@ function HotelDetail() {
       </div>
     </div>
 
+    <Details/>
+
     <div className="map pb-4 mb-4">
       <h1 className="pb-4">Tour Map</h1>
       <img src={map} alt="map" className="w-75 pb-5"/>
     </div>
 
     <Faq/>
+    <Reviews/>
+    <Suggestions/>
     </div>
   );
 }

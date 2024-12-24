@@ -1,48 +1,269 @@
 @import "../../styles/variables.css";
 
-.faq h1{
-    color: var(--secondary-color);
-    font-weight: bold;
-    font-size: 25px;
-    border-top: 2px solid rgb(236, 234, 234);
+.faq h1 {
+  color: var(--secondary-color);
+  font-weight: bold;
+  font-size: 25px;
+  border-top: 2px solid rgb(236, 234, 234);
 }
 
-.questions{
+.questions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.questions span {
+  font-weight: bold;
+  color: var(--secondary-color);
+}
+
+.toggle-btn {
+  border: none;
+  border-radius: 50px;
+  font-size: 25px;
+}
+
+.toggle-btn.collapsed {
+  background-color: var(--section-background);
+  color: var(--primary-color);
+  padding: 0 10px;
+}
+
+.toggle-btn.expanded {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 2px 14px;
+}
+
+.faq-box {
+  border: 1px solid rgb(221, 218, 218);
+  border-radius: 10px;
+  color: var(--secondary-color);
+  padding: 5px 20px;
+}
+.faq-items {
+  border-bottom: 2px solid rgb(236, 234, 234);
+}
+
+.reply-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.reply-info div {
+  display: flex;
+  align-items: baseline;
+  gap: 20px;
+}
+
+.reply-info h1 {
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 12px 10px;
+  border-radius: 50px;
+}
+
+.rating div {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.rating {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+}
+
+.reviews span {
+  color: var(--secondary-color);
+  font-weight: normal;
+}
+
+.reactions {
+  display: flex;
+  gap: 20px;
+}
+
+.reactions button {
+  border: none;
+  background-color: transparent;
+}
+
+.see-reviews {
+  color: var(--primary-color);
+  background-color: transparent;
+  border: 1px solid var(--primary-color);
+  font-size: 15px;
+  border-radius: 5px;
+  padding: 15px 22px;
+}
+
+.container-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
+
+.container-rows {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 4rem;
+}
+
+.food {
+  padding-right: 61px;
+}
+.room {
+  padding-right: 18px;
+}
+.price {
+  padding-right: 34px;
+}
+
+.reply h1 {
+  color: var(--secondary-color);
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.form-row-1 {
+  display: flex;
+  gap: 20px;
+}
+
+.reply-button {
+  color: white;
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  font-size: 15px;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
+.suggestions h1 {
+  color: var(--secondary-color);
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+
+.card{
+    width: 290px;
+}
+
+.card-img-top{
+    border-radius: 10px;
+}
+
+.card-rating{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 1px solid rgb(232, 228, 228);
+}
+
+.card-body span{
+    color: var(--secondary-color);
+    font-weight: normal;
+}
+.card-body h5{
+    color: var(--secondary-color);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.card-price{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.questions span{
-    font-weight: bold;
-    color: var(--secondary-color);
+.card-img{
+    position: relative;
 }
 
-.toggle-btn{
+.card button{
     border: none;
     border-radius: 50px;
-    font-size: 25px;
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
 }
 
-.toggle-btn.collapsed {
-    background-color: var(--section-background);
-    color: var(--primary-color);
-    padding: 0 10px;
-  }
 
-  .toggle-btn.expanded {
-    background-color: var(--primary-color);
-    color: white;
-    padding: 2px 14px;
-  }
+.trip-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-.faq-box{
-    border: 1px solid rgb(221, 218, 218);
-    border-radius: 10px;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.info span{
     color: var(--secondary-color);
-    padding: 5px 20px;
+    font-weight: normal;
 }
-.faq-items{
+
+.details h1{
+    color: var(--secondary-color);
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.details h4{
+    font-size: 20px;
+}
+
+.overview{
+    font-size: 14px;
     border-bottom: 2px solid rgb(236, 234, 234);
 }
 
+.amenities-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid rgb(236, 234, 234);
+}
+
+.amenities-items ul{
+    list-style: none;
+}
+
+.sucess{
+    background-color: rgb(235, 243, 235);
+    border-radius: 50px;
+    padding: 8px;  
+    margin-right: 10px; 
+}
+
+.danger{
+    padding: 8px;
+    border-radius: 50px;
+    background-color: rgb(247, 211, 211);
+    margin-right: 10px; 
+}
+
+.details{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 10px;
+}
