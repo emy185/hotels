@@ -58,7 +58,7 @@
 .amenities-items {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: start;
   border-bottom: 2px solid rgb(236, 234, 234);
 }
 

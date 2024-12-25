@@ -160,7 +160,7 @@ function TourPosts() {
                       <button
                         className="detailsButton"
                         onClick={() => {
-                          navigate("/HotelDetails");
+                          navigate("/HotelDetails", { state: { id: item.id } });
                         }}
                       >
                         View Details

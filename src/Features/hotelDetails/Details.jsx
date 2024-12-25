@@ -1,10 +1,11 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import { LuClock3 } from "react-icons/lu";
 import { PiUsersThree, PiCalendarCheck } from "react-icons/pi";
 import { LiaBirthdayCakeSolid, LiaLanguageSolid } from "react-icons/lia";
 import { IoMdCheckmark, IoMdClose } from "react-icons/io";
 import { GoArrowUpRight } from "react-icons/go";
+import data from "../../assets/data/Data.json";
 import "./style.css";
 
 function Details() {
@@ -23,6 +24,11 @@ function Details() {
   const servicePerPerson = (adultCount + youthCount + childCount) * 40;
 
   const navigate = useNavigate();
+  const phuketData = data.hotelsPhupket || [];
+  const location = useLocation();
+  const { id } = location.state;
+
+  const item = phuketData.find((item) => item.id === id);
 
   const total =
     adultCount * adultPrice +
@@ -50,6 +56,8 @@ function Details() {
 
   const handleBookNow = () => {
     const bookingDetails = {
+      title: item.name,
+      img: item.image,
       adultCount,
       youthCount,
       childCount,
@@ -105,7 +113,7 @@ function Details() {
 
           <div>
             <h1 className="pb-3">Tour Overview</h1>
-            <p className="pb-2">description</p>
+            <p className="pb-2">{item.description}</p>
             <h4 className="pb-3">Tour Highlights</h4>
             <ul className="pb-4 overview">
               <li className="pb-2">
@@ -126,8 +134,18 @@ function Details() {
           <div className="amenities pb-4">
             <h1 className="pb-2 pt-4">What's included</h1>
             <div className="amenities-items">
-              <div>
-                <IoMdCheckmark className="text-success sucess fs-2" /> amenities
+              <div className="amenities-section">
+                {Array.isArray(item.amenities) && item.amenities.length > 0 ? (
+                  <ul className="amenities-list">
+                    {item.amenities.map((amenity, index) => (
+                      <li key={index} className="amenity-item pb-3">
+                      <IoMdCheckmark className="text-success sucess fs-2" /> {amenity}
+                      </li>
+                    ))}
+                  </ul>
+                ) : (
+                  <p>No amenities available</p>
+                )}
               </div>
               <div>
                 <ul>
@@ -151,7 +169,7 @@ function Details() {
 
         <div className="booking-card bg-white">
           <h5 className="py-2">
-            From <span className="fw-bold">$1,200</span>
+            From <span className="fw-bold">${item.price_per_night}</span>
           </h5>
 
           <div className="date-time mb-3">

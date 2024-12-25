@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Row, Col } from "react-bootstrap";
 import style from "./BookingPage.module.css";
-import Image from "../../assets/images/tour-4.png";
 import { useLocation } from "react-router-dom";
 
 const BookingPage = () => {
@@ -176,13 +175,13 @@ const BookingPage = () => {
               <Row className="d-flex align-content-center">
                 <Col lg={4} className={style.tripImg}>
                   <img
-                    src={Image}
+                    src={bookingDetails.img}
                     alt="Zipline 18 Platform"
                     style={{ width: "100%" }}
                   />
                 </Col>
                 <Col lg={8} className={style.tripName}>
-                  <p>Zipline 18 Platform and ATV Adventure Tour From Phuket</p>
+                  <p>{bookingDetails.title}</p>
                 </Col>
               </Row>
               <hr />

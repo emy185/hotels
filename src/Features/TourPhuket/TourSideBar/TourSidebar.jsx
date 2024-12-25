@@ -1,8 +1,5 @@
 import React from "react";
 import './style.css'
-
-import Dropdown from "react-bootstrap/Dropdown";
-import DropdownButton from "react-bootstrap/DropdownButton";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ClientChooseSide from "./ClientChooseSide/clientChooseSide";
 import FilterPrice from "./FilterPrice/FilterPrice";
