@@ -3,7 +3,11 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Row, Col } from "react-bootstrap";
 import style from "./BookingPage.module.css";
 import Image from "../../assets/images/tour-4.png";
+import { useLocation } from "react-router-dom";
+
 const BookingPage = () => {
+  const location = useLocation();
+  const bookingDetails = location.state || {};
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
@@ -186,12 +190,12 @@ const BookingPage = () => {
                 <p>
                   <strong>Date:</strong>
                   <span className={`${style.data} float-end`}>
-                    06 April 2023
+                    {bookingDetails.date}
                   </span>
                 </p>
                 <p>
                   <strong>Time:</strong>
-                  <span className={`${style.data} float-end`}> 10:00 am</span>
+                  <span className={`${style.data} float-end`}> {bookingDetails.time}</span>
                 </p>
                 <p>
                   <strong>Duration:</strong>
@@ -201,9 +205,9 @@ const BookingPage = () => {
                   <strong>Tickets:</strong>
                   <span className={`${style.data} float-end`}>
                     {" "}
-                    Adult x2 = $98
-                    <br /> Youth x3 = $383
-                    <br /> Children x6 = $394
+                    Adult x{bookingDetails.adultCount} = ${282.0*bookingDetails.adultCount}
+                    <br /> Youth x{bookingDetails.youthCount} = ${168.0*bookingDetails.youthCount}
+                    <br /> Children x{bookingDetails.childCount} = ${80.0*bookingDetails.childCount}
                   </span>
                 </p>
               </Row>
@@ -211,33 +215,33 @@ const BookingPage = () => {
               <Row>
                 <p>
                   <strong>Service per booking</strong>
-                  <span className={`${style.data} float-end`}> $30.00</span>
+                  <span className={`${style.data} float-end`}> ${bookingDetails.servicePerBooking}</span>
                 </p>
                 <p>
-                  <strong>Service per person 1 Adult,2</strong>
-                  <span className={`${style.data} float-end`}> $179,242</span>
+                  <strong>Service per person {bookingDetails.adultCount} Adult,{bookingDetails.youthCount}</strong>
+                  <span className={`${style.data} float-end`}> ${bookingDetails.servicePerPerson}</span>
                 </p>
                 <p>
-                  <strong>Youth,4 Children</strong>
+                  <strong>Youth,{bookingDetails.childCount} Children</strong>
                 </p>
               </Row>
               <hr />
               <Row>
                 <p>
                   <strong>Subtotal</strong>
-                  <span className={`${style.data} float-end`}>$382</span>
+                  <span className={`${style.data} float-end`}>${(bookingDetails.adultCount*282)+(bookingDetails.youthCount*168)+(bookingDetails.childCount*80)}</span>
                 </p>
                 <p>
                   <strong>Total</strong>
-                  <span className={`${style.data} float-end`}> $23</span>
+                  <span className={`${style.data} float-end`}> ${bookingDetails.total}</span>
                 </p>
                 <p>
                   <strong>Amount Paid</strong>
-                  <span className={`${style.data} float-end`}> $3.482</span>
+                  <span className={`${style.data} float-end`}> $40.00</span>
                 </p>
                 <p>
                   <strong>Amount Due</strong>
-                  <span className={`${style.data} float-end`}> $43.242 </span>
+                  <span className={`${style.data} float-end`}> ${bookingDetails.total-40.00} </span>
                 </p>
               </Row>
             </ul>

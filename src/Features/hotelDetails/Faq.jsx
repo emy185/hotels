@@ -33,7 +33,7 @@ function Faq() {
       <div>
         <div className="pb-4 faq-items">
           {faqData.map((item, index) => (
-            <div key={index} className="mb-3 faq-box">
+            <div key={index} className="mb-3 faq-box bg-white">
               <div onClick={() => handleToggle(index)} className="questions">
                 <span>{item.question}</span>
                 <button className={`toggle-btn ${
