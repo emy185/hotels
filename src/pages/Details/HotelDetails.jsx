@@ -1,9 +1,9 @@
 import React from "react";
-import Faq from "../../Features/HotelDetails/Faq";
-import Reviews from "../../Features/HotelDetails/Reviews";
-import Suggestions from "../../Features/HotelDetails/Suggestions";
-import Details from "../../Features/HotelDetails/Details";
-import HotelTitle from "../../Features/HotelDetails/HotelTitle";
+import Faq from "../../Features/hotelDetails/Faq";
+import Reviews from "../../Features/hotelDetails/Reviews";
+import Suggestions from "../../Features/hotelDetails/Suggestions";
+import Details from "../../Features/hotelDetails/Details";
+import HotelTitle from "../../Features/hotelDetails/HotelTitle";
 import "leaflet/dist/leaflet.css";
 import "./style.css";
 
