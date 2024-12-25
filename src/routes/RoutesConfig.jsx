@@ -6,10 +6,11 @@ import TripsDetailsPage from "../pages/TripsDetailsPage/TripsDetailsPage";
 import Contact from "../pages/Contact/Contact";
 import BookingPage from "../pages/BookingPage/BookingPage";
 import Home from "../pages/Home/Home";
-
+import Guides from "../pages/Guides/Guides";
 function RoutesConfig() {
   return (
     <Routes>
+      <Route path="/Guides" element={<Guides />} />
       <Route path="/" element={<Home />} />
       <Route path="/Tour" element={<Tour />} />
       <Route path="/HotelDetails" element={<HotelDetail />} />
