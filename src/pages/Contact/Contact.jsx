@@ -1,13 +1,13 @@
 import React from "react";
-import { MapContainer, TileLayer } from 'react-leaflet';
-import 'leaflet/dist/leaflet.css'; // Import leaflet CSS
+import { MapContainer, TileLayer } from "react-leaflet";
+import "leaflet/dist/leaflet.css"; // Import leaflet CSS
 import { Container, Form, Button, Row, Col } from "react-bootstrap";
 import { Formik } from "formik";
 import * as Yup from "yup";
 import WaveSVG from "../../assets/images/shape.svg";
 import styles from "./Contact.module.css";
 
-console.log("Hello")
+console.log("Hello");
 const validationSchema = Yup.object().shape({
   name: Yup.string().required("Name is required"),
   phone: Yup.string()
@@ -30,17 +30,14 @@ function Contact() {
       <Container>
         <Row>
           <Col xs={12} className="position-relative">
-          <MapContainer
-  center={[51.505, -0.09]}
-  zoom={5}
-  style={{ height: "100%", width: "100%" }}
-  className="z-0"
->
-  <TileLayer
-    url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-    attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-  />
-</MapContainer>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5822219.590399478!2d9.975404057948008!3d44.5585468789369!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c1493f1275e7%3A0x3cffcd13c6740e8d!2sMilan%2C%20Metropolitan%20City%20of%20Milan%2C%20Italy!5e0!3m2!1sen!2seg!4v1735146727979!5m2!1sen!2seg"
+              width="100%"
+              height="300"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
 
             <img
               src={WaveSVG}
