@@ -1,6 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import Tour from "../pages/Tour/Tour";
+import Tour from "../pages/Tour/Tour"
 import HotelDetail from "../pages/Details/HotelDetails";
 import TripsDetailsPage from "../pages/TripsDetailsPage/TripsDetailsPage";
 import Contact from "../pages/Contact/Contact";
@@ -12,7 +12,7 @@ function RoutesConfig() {
     <Routes>
       <Route path="/Guides" element={<Guides />} />
       <Route path="/" element={<Home />} />
-      <Route path="/Tour" element={<Tour />} />
+      <Route path="/Tour" element={<Tour/>} />
       <Route path="/HotelDetails" element={<HotelDetail />} />
       <Route path="/TripsDetailsPage/:id" element={<TripsDetailsPage />} />
       <Route path="/Contact" element={<Contact />} />

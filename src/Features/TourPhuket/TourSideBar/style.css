@@ -1,0 +1,17 @@
+.travellingTimeCard{
+    height: 160px;
+    background-color: rgb(216, 78, 28);
+  
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.ChoosingDateInput{
+    height: 60px;
+    background: white;
+}
+.containerCard{
+    width: 230px;
+}
+.ChoosingDateInput{
+    border-radius: 20px;
+}
