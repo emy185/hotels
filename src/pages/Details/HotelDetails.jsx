@@ -1,14 +1,16 @@
 import React from "react";
 import "./style.css";
 import map from "../../assets/images/map.png";
-import Faq from "../../Features/hotelDetails/Faq";
-import Reviews from "../../Features/hotelDetails/Reviews";
-import Suggestions from "../../Features/hotelDetails/Suggestions";
-import Details from "../../Features/hotelDetails/Details";
+import Faq from "../../Features/HotelDetails/Faq";
+import Reviews from "../../Features/HotelDetails/Reviews";
+import Suggestions from "../../Features/HotelDetails/Suggestions";
+import Details from "../../Features/HotelDetails/Details";
+import HotelTitle from "../../Features/HotelDetails/HotelTitle";
 
 function HotelDetail() {
   return (
-    <div className="container mt-4">
+    <div className="bg-light">
+    <div className="container pt-4">
     <div className="py-2">
         <div className="page-name">
             <div>
@@ -27,6 +29,8 @@ function HotelDetail() {
       </div>
     </div>
 
+    
+     <HotelTitle/> 
     <Details/>
 
     <div className="map pb-4 mb-4">
@@ -37,6 +41,7 @@ function HotelDetail() {
     <Faq/>
     <Reviews/>
     <Suggestions/>
+    </div>
     </div>
   );
 }

@@ -4,22 +4,32 @@ import { PiUsersThree } from "react-icons/pi";
 import { LiaBirthdayCakeSolid, LiaLanguageSolid } from "react-icons/lia";
 import { IoMdCheckmark, IoMdClose } from "react-icons/io";
 import { PiCalendarCheck } from "react-icons/pi";
+import { GoArrowUpRight } from "react-icons/go";
+import { useNavigate } from "react-router-dom";
 
 function Details() {
   const [adultCount, setAdultCount] = useState(3);
   const [youthCount, setYouthCount] = useState(2);
   const [childCount, setChildCount] = useState(4);
+  const [addServicePerBooking, setAddServicePerBooking] = useState(false);
+  const [addServicePerPerson, setAddServicePerPerson] = useState(false);
+  const [selectedDate, setSelectedDate] = useState(""); 
+  const [selectedTime, setSelectedTime] = useState(""); 
 
   const adultPrice = 282.0;
   const youthPrice = 168.0;
   const childPrice = 80.0;
   const servicePerBooking = 40;
+  const servicePerPerson = (adultCount + youthCount + childCount) * 40;
+
+  const navigate = useNavigate()
 
   const total =
     adultCount * adultPrice +
     youthCount * youthPrice +
     childCount * childPrice +
-    servicePerBooking;
+    (addServicePerBooking ? servicePerBooking : 0) +
+    (addServicePerPerson ? servicePerPerson : 0);
 
   const handleIncrement = (type) => {
     if (type === "adult") setAdultCount(adultCount + 1);
@@ -32,13 +42,35 @@ function Details() {
     if (type === "youth" && youthCount > 0) setYouthCount(youthCount - 1);
     if (type === "child" && childCount > 0) setChildCount(childCount - 1);
   };
+
+  const handleCheckboxChange = (type) => {
+    if (type === "booking") setAddServicePerBooking(!addServicePerBooking);
+    if (type === "person") setAddServicePerPerson(!addServicePerPerson);
+  };
+
+  const handleBookNow = () => {
+    const bookingDetails = {
+      adultCount,
+      youthCount,
+      childCount,
+      servicePerBooking: addServicePerBooking ? servicePerBooking : 0,
+    servicePerPerson: addServicePerPerson
+      ? (adultCount + youthCount + childCount) * servicePerBooking
+      : 0,
+      total,
+      date: selectedDate,
+      time: selectedTime, 
+    };
+    navigate("/bookingPage", { state: bookingDetails });
+  };
+
   return (
     <div className="py-5">
       <div className="details">
-        <div className="w-75">
+        <div className="details-description">
           <div className="trip-info pb-5">
             <div className="info">
-              <LuClock3 className="border border-light border-2 p-2 fs-1 rounded" />
+              <LuClock3 className="border border-secondary p-2 fs-1 rounded" />
               <div>
                 <span>Duration</span>
                 <br />
@@ -46,7 +78,7 @@ function Details() {
               </div>
             </div>
             <div className="info">
-              <PiUsersThree className="border border-light border-2 p-2 fs-1 rounded" />
+              <PiUsersThree className="border border-secondary p-2 fs-1 rounded" />
               <div>
                 <span>Group Size</span>
                 <br />
@@ -54,7 +86,7 @@ function Details() {
               </div>
             </div>
             <div className="info">
-              <LiaBirthdayCakeSolid className="border border-light border-2 p-2 fs-1 rounded" />
+              <LiaBirthdayCakeSolid className="border border-secondary p-2 fs-1 rounded" />
               <div>
                 <span>Ages</span>
                 <br />
@@ -62,7 +94,7 @@ function Details() {
               </div>
             </div>
             <div className="info">
-              <LiaLanguageSolid className="border border-light border-2 p-2 fs-1 rounded" />
+              <LiaLanguageSolid className="border border-secondary p-2 fs-1 rounded" />
               <div>
                 <span>Languages</span>
                 <br />
@@ -117,72 +149,114 @@ function Details() {
           </div>
         </div>
 
-        <div className="card-container">
-          <h5 className="price">
-            From <span>$1,200</span>
+        <div className="booking-card bg-white">
+          <h5 className="py-2">
+            From <span className="fw-bold">$1,200</span>
           </h5>
 
-          <div className="dropdown">
-            <label>From</label>
-            <select>
-              <option>December 05 - January</option>
-              <option>December 15 - December 22</option>
-              <option>December 22 - January 01</option>
-            </select>
+          <div className="date-time mb-3">
+            <div className="dropdown date-selection">
+              <PiCalendarCheck className="p-2 bg-light fs-1 rounded" />
+              <div>
+                <label>From</label>
+                <br/>
+                <select value={selectedDate} onChange={(e) => setSelectedDate(e.target.value)}>
+                  <option>December 05 ~ January</option>
+                  <option>December 15 ~ December 22</option>
+                  <option>December 22 ~ January 01</option>
+                </select>
+              </div>
+            </div>
+
+            <div className="dropdown">
+              <LuClock3 className="p-2 bg-light fs-1 rounded" />
+              <div>
+                <label>Time</label>
+                <br />
+                <select className="time-selection" value={selectedTime}
+            onChange={(e) => setSelectedTime(e.target.value)}>
+                  <option>Choose time</option>
+                  <option>9:00 AM</option>
+                  <option>12:00 PM</option>
+                  <option>3:00 PM</option>
+                </select>
+              </div>
+            </div>
           </div>
 
-          <div className="dropdown">
-            <label>Time</label>
-            <select>
-              <option>Choose time</option>
-              <option>9:00 AM</option>
-              <option>12:00 PM</option>
-              <option>3:00 PM</option>
-            </select>
-          </div>
-
-          <h6>Tickets</h6>
-          <div className="ticket-row">
-            <span>Adult (18+ years)</span>
+          <h5 className="">Tickets</h5>
+          <div className="ticket-row mb-3">
+            <span className="fw-normal">
+              Adult (18 + years){" "}
+              <span className="fw-bold">${adultPrice.toFixed(2)}</span>
+            </span>
             <div className="counter">
               <button onClick={() => handleDecrement("adult")}>-</button>
-              <span>{adultCount}</span>
+              <span className="mx-3">{adultCount}</span>
               <button onClick={() => handleIncrement("adult")}>+</button>
             </div>
-            <span>${adultPrice.toFixed(2)}</span>
           </div>
-          <div className="ticket-row">
-            <span>Youth (13-17 years)</span>
+          <div className="ticket-row mb-3">
+            <span className="fw-normal">
+              Youth (13 - 17 years){" "}
+              <span className="fw-bold">${youthPrice.toFixed(2)}</span>
+            </span>
             <div className="counter">
               <button onClick={() => handleDecrement("youth")}>-</button>
-              <span>{youthCount}</span>
+              <span className="mx-3">{youthCount}</span>
               <button onClick={() => handleIncrement("youth")}>+</button>
             </div>
-            <span>${youthPrice.toFixed(2)}</span>
           </div>
-          <div className="ticket-row">
-            <span>Children (0-12 years)</span>
+          <div className="ticket-row mb-3">
+            <span className="fw-normal">
+              Children (0 - 12 years){" "}
+              <span className="fw-bold">${childPrice.toFixed(2)}</span>
+            </span>
             <div className="counter">
               <button onClick={() => handleDecrement("child")}>-</button>
-              <span>{childCount}</span>
+              <span className="mx-3">{childCount}</span>
               <button onClick={() => handleIncrement("child")}>+</button>
             </div>
-            <span>${childPrice.toFixed(2)}</span>
           </div>
 
-          <h6>Add Extra</h6>
-          <div className="extra">
-            <input type="checkbox" id="service" />
-            <label htmlFor="service">
-              Add Service per booking ${servicePerBooking}
-            </label>
+          <h5 className="pb-2">Add Extra</h5>
+          <div className="extra mb-2">
+            <div>
+              <input
+                type="checkbox"
+                id="service"
+                checked={addServicePerBooking}
+                onChange={() => handleCheckboxChange("booking")}
+              />
+              <label htmlFor="service" className="mx-2">
+                Add Service per booking
+              </label>
+            </div>
+            <span className="fw-normal">$ {servicePerBooking}</span>
           </div>
+          <div className="extra ">
+            <div className="">
+              <input
+                type="checkbox"
+                id="service"
+                checked={addServicePerPerson}
+                onChange={() => handleCheckboxChange("person")}
+              />
+              <label htmlFor="service" className="mx-2">
+                Add Service per person
+              </label>
+            </div>
+            <span className="fw-normal">$ {servicePerBooking}</span>
+          </div>
+          <span className="fw-normal mx-4">Adult: $17.00 - Youth: $14.00</span>
 
-          <h5 className="total">
-            Total: <span>${total.toFixed(2)}</span>
+          <h5 className="total pt-4 my-4">
+            Total: <span className="fw-normal">${total.toFixed(2)}</span>
           </h5>
 
-          <button className="book-now">Book Now</button>
+          <button className="book-now mb-3 w-100" onClick={handleBookNow}>
+            Book Now <GoArrowUpRight className="fs-4" />
+          </button>
         </div>
       </div>
     </div>
