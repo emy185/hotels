@@ -1,47 +1,55 @@
 import React from "react";
-import "./style.css";
-import map from "../../assets/images/map.png";
 import Faq from "../../Features/HotelDetails/Faq";
 import Reviews from "../../Features/HotelDetails/Reviews";
 import Suggestions from "../../Features/HotelDetails/Suggestions";
 import Details from "../../Features/HotelDetails/Details";
 import HotelTitle from "../../Features/HotelDetails/HotelTitle";
+import "leaflet/dist/leaflet.css";
+import "./style.css";
 
 function HotelDetail() {
   return (
     <div className="bg-light">
-    <div className="container pt-4">
-    <div className="py-2">
-        <div className="page-name">
+      <div className="container pt-4">
+        <div className="py-2">
+          <div className="page-name">
             <div>
-                <p>Home &gt; Tours &gt; Phuket</p>
+              <p>Home &gt; Tours &gt; Phuket</p>
             </div>
             <div>
-                <p>The 10 BEST Phuket Tours & Excursions</p>
+              <p>The 10 BEST Phuket Tours & Excursions</p>
             </div>
+          </div>
         </div>
-    </div>
 
-    <div className="">
-      <div className="filters">
-        <p className="bestseller">Bestseller</p>
-        <p className="free-cancel">Free cancellation</p>
+        <div>
+          <div className="filters">
+            <p className="bestseller">Bestseller</p>
+            <p className="free-cancel">Free cancellation</p>
+          </div>
+        </div>
+
+        <HotelTitle />
+        <Details />
+
+        <div className="map pb-4 mb-4">
+          <h1 className="pb-4">Tour Map</h1>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5822219.590399478!2d9.975404057948008!3d44.5585468789369!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c1493f1275e7%3A0x3cffcd13c6740e8d!2sMilan%2C%20Metropolitan%20City%20of%20Milan%2C%20Italy!5e0!3m2!1sen!2seg!4v1735146727979!5m2!1sen!2seg"
+            width="75%"
+            height="400"
+            allowfullscreen=""
+            loading="lazy"
+            title="hotel-location"
+            referrerpolicy="no-referrer-when-downgrade"
+            className="pb-5"
+          ></iframe>
+        </div>
+
+        <Faq />
+        <Reviews />
+        <Suggestions />
       </div>
-    </div>
-
-    
-     <HotelTitle/> 
-    <Details/>
-
-    <div className="map pb-4 mb-4">
-      <h1 className="pb-4">Tour Map</h1>
-      <img src={map} alt="map" className="w-75 pb-5"/>
-    </div>
-
-    <Faq/>
-    <Reviews/>
-    <Suggestions/>
-    </div>
     </div>
   );
 }

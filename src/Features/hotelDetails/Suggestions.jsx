@@ -4,6 +4,7 @@ import { SlLocationPin } from "react-icons/sl";
 import { FaStar } from "react-icons/fa6";
 import { LuClock3 } from "react-icons/lu";
 import { CiHeart } from "react-icons/ci";
+import "./style.css";
 
 function Suggestions() {
   const suggestions = data.featuredTrips.slice(0, 4);

@@ -1,10 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { FaStar } from "react-icons/fa6";
 import { SlLocationPin } from "react-icons/sl";
 import { PiNewspaper } from "react-icons/pi";
-import { CiHeart } from "react-icons/ci";
-import { CiShare1 } from "react-icons/ci";
-import { Link } from "react-router-dom";
+import { CiHeart, CiShare1 } from "react-icons/ci";
+import "./style.css";
 
 function HotelTitle() {
   return (
@@ -36,7 +36,7 @@ function HotelTitle() {
           </Link>
         </div>
       </div>
-      <img src="img" alt="hotel-img"/>
+      <img src="img" alt="hotel-img" />
     </div>
   );
 }

@@ -204,6 +204,7 @@
 
 .trip-info {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 }
@@ -267,12 +268,12 @@
   justify-content: space-between;
 }
 
-.details-description{
+.details-description {
   width: 70%;
 }
 
 .booking-card {
-  padding: 10px;
+  padding: 15px;
   border-radius: 5px;
   border: 1px solid rgb(238, 235, 235);
 }
@@ -292,54 +293,55 @@
   outline: none;
 }
 
-.date-time{
+.date-time {
   padding: 10px;
   border-radius: 5px;
   border: 1px solid rgb(238, 235, 235);
 }
 
-.date-selection{
+.date-selection {
   border-bottom: 1px solid rgb(238, 235, 235);
   padding-bottom: 10px;
   margin-bottom: 10px;
 }
 
-.time-selection{
+.time-selection {
   padding-right: 7.5rem;
 }
 
-.ticket-row{
+.ticket-row {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 }
 
-.ticket-row span{
+.ticket-row span {
   font-size: 14px;
 }
 
-.counter button{
-border: 1px solid rgb(238, 235, 235) ;
-padding: 0px 10px;
-border-radius: 50px;
-background-color: transparent;
-font-size: 18px;
+.counter button {
+  border: 1px solid rgb(238, 235, 235);
+  padding: 0px 10px;
+  border-radius: 50px;
+  background-color: transparent;
+  font-size: 18px;
 }
 
-.extra{
+.extra {
   display: flex;
   align-items: start;
   justify-content: space-between;
 }
 
-.total{
-  border-top: 1px solid rgb(238, 235, 235) ;
+.total {
+  border-top: 1px solid rgb(238, 235, 235);
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.book-now{
+.book-now {
   background-color: var(--primary-color);
   color: white;
   border: none;
@@ -347,28 +349,28 @@ font-size: 18px;
   border-radius: 10px;
 }
 
-.hotel-title h1{
-font-size: 50px;
+.hotel-title h1 {
+  font-size: 50px;
 }
 
-.hotel-title span{
+.hotel-title span {
   color: var(--secondary-color);
   font-weight: normal;
   font-size: 14px;
 }
 
-.link{
+.link {
   color: var(--secondary-color);
   text-decoration: none;
 }
 
-.hotel-title-row{
+.hotel-title-row {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.hotel-title-row-flex{
+.hotel-title-row-flex {
   display: flex;
   align-items: center;
   gap: 2.5rem;

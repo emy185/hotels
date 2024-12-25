@@ -1,11 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import data from "../../assets/data/Data.json";
 import { SlLocationPin } from "react-icons/sl";
 import { FaStar } from "react-icons/fa6";
 import { LuClock3 } from "react-icons/lu";
 import { CiHeart } from "react-icons/ci";
 import { GoArrowUpRight } from "react-icons/go";
-import { Link } from "react-router-dom";
 import "./style.css";
 
 function FeaturedTrips() {
@@ -16,7 +16,7 @@ function FeaturedTrips() {
         <div className="d-flex align-items-baseline justify-content-between">
           <h3 className="fw-bold pb-4">Featured Trips</h3>
           <Link to="#" className="see-all">
-            See all <GoArrowUpRight/>
+            See all <GoArrowUpRight />
           </Link>
         </div>
         <div className="cards">

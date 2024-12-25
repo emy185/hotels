@@ -1,11 +1,11 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { LuClock3 } from "react-icons/lu";
-import { PiUsersThree } from "react-icons/pi";
+import { PiUsersThree, PiCalendarCheck } from "react-icons/pi";
 import { LiaBirthdayCakeSolid, LiaLanguageSolid } from "react-icons/lia";
 import { IoMdCheckmark, IoMdClose } from "react-icons/io";
-import { PiCalendarCheck } from "react-icons/pi";
 import { GoArrowUpRight } from "react-icons/go";
-import { useNavigate } from "react-router-dom";
+import "./style.css";
 
 function Details() {
   const [adultCount, setAdultCount] = useState(3);
@@ -13,8 +13,8 @@ function Details() {
   const [childCount, setChildCount] = useState(4);
   const [addServicePerBooking, setAddServicePerBooking] = useState(false);
   const [addServicePerPerson, setAddServicePerPerson] = useState(false);
-  const [selectedDate, setSelectedDate] = useState(""); 
-  const [selectedTime, setSelectedTime] = useState(""); 
+  const [selectedDate, setSelectedDate] = useState("December 05 ~ January");
+  const [selectedTime, setSelectedTime] = useState("9:00 AM");
 
   const adultPrice = 282.0;
   const youthPrice = 168.0;
@@ -22,7 +22,7 @@ function Details() {
   const servicePerBooking = 40;
   const servicePerPerson = (adultCount + youthCount + childCount) * 40;
 
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   const total =
     adultCount * adultPrice +
@@ -54,12 +54,12 @@ function Details() {
       youthCount,
       childCount,
       servicePerBooking: addServicePerBooking ? servicePerBooking : 0,
-    servicePerPerson: addServicePerPerson
-      ? (adultCount + youthCount + childCount) * servicePerBooking
-      : 0,
+      servicePerPerson: addServicePerPerson
+        ? (adultCount + youthCount + childCount) * servicePerBooking
+        : 0,
       total,
       date: selectedDate,
-      time: selectedTime, 
+      time: selectedTime,
     };
     navigate("/bookingPage", { state: bookingDetails });
   };
@@ -159,8 +159,11 @@ function Details() {
               <PiCalendarCheck className="p-2 bg-light fs-1 rounded" />
               <div>
                 <label>From</label>
-                <br/>
-                <select value={selectedDate} onChange={(e) => setSelectedDate(e.target.value)}>
+                <br />
+                <select
+                  value={selectedDate}
+                  onChange={(e) => setSelectedDate(e.target.value)}
+                >
                   <option>December 05 ~ January</option>
                   <option>December 15 ~ December 22</option>
                   <option>December 22 ~ January 01</option>
@@ -173,9 +176,11 @@ function Details() {
               <div>
                 <label>Time</label>
                 <br />
-                <select className="time-selection" value={selectedTime}
-            onChange={(e) => setSelectedTime(e.target.value)}>
-                  <option>Choose time</option>
+                <select
+                  className="time-selection"
+                  value={selectedTime}
+                  onChange={(e) => setSelectedTime(e.target.value)}
+                >
                   <option>9:00 AM</option>
                   <option>12:00 PM</option>
                   <option>3:00 PM</option>
@@ -184,7 +189,7 @@ function Details() {
             </div>
           </div>
 
-          <h5 className="">Tickets</h5>
+          <h5>Tickets</h5>
           <div className="ticket-row mb-3">
             <span className="fw-normal">
               Adult (18 + years){" "}
@@ -234,8 +239,8 @@ function Details() {
             </div>
             <span className="fw-normal">$ {servicePerBooking}</span>
           </div>
-          <div className="extra ">
-            <div className="">
+          <div className="extra">
+            <div>
               <input
                 type="checkbox"
                 id="service"

@@ -36,11 +36,17 @@ function Faq() {
             <div key={index} className="mb-3 faq-box bg-white">
               <div onClick={() => handleToggle(index)} className="questions">
                 <span>{item.question}</span>
-                <button className={`toggle-btn ${
-                activeIndex === index ? "expanded" : "collapsed"
-              }`}>{activeIndex === index ? "-" : "+"}</button>
+                <button
+                  className={`toggle-btn ${
+                    activeIndex === index ? "expanded" : "collapsed"
+                  }`}
+                >
+                  {activeIndex === index ? "-" : "+"}
+                </button>
               </div>
-              {activeIndex === index && <div className="answer pb-2">{item.answer}</div>}
+              {activeIndex === index && (
+                <div className="answer pb-2">{item.answer}</div>
+              )}
             </div>
           ))}
         </div>

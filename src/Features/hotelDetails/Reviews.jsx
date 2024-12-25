@@ -1,11 +1,11 @@
 import React from "react";
-import { FaStar } from "react-icons/fa6";
 import imgs from "../../assets/images/reply-img.png";
+import { FaStar } from "react-icons/fa6";
 import { AiFillLike, AiFillDislike } from "react-icons/ai";
 import { GoArrowUpRight } from "react-icons/go";
-import "./style.css";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
+import "./style.css";
 
 function Reviews() {
   const validationSchema = Yup.object({
