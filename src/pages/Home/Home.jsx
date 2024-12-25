@@ -10,9 +10,10 @@ function Home() {
     <>
       <FeaturedTrips />
       <TrendingDistination />
+      <CustomerReviews />
       <TravelArticals />
       <AppBooking />
-      <CustomerReviews />
+     
     </>
   );
 }

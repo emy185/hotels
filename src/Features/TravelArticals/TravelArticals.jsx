@@ -28,10 +28,9 @@ function TravelArticals() {
                 </Row>
 
                 {/* Cards Section */}
-                <Row className={style.cards}>
+                <Row className={`${style.cards} justify-content-center`}>
                     {tripPosts.slice(0, 3).map((trip, index) => (
-                        <Col lg={4} key={index} className="mb-4">
-                            {/* Link to dynamic route */}
+                        <Col xs={12} sm={8} md={6} lg={4} key={index} className="mb-4 d-flex justify-content-center">
                             <Link to={`/TripsDetailsPage/${trip.id}`} className={style.cardLink}>
                                 <Card className={style.card}>
                                     <Card.Img
@@ -51,8 +50,6 @@ function TravelArticals() {
                         </Col>
                     ))}
                 </Row>
-
-
             </Container>
         </section>
     );

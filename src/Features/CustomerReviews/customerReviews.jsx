@@ -12,6 +12,7 @@ function CustomerReviews() {
     <Container className="text-center my-5">
       <h2 className="fw-bold">Customer Reviews</h2>
       <br />
+      <i class={`fa-solid fa-quote-left ${Styles.icon}`}></i>
       <div className="my-4">
         <blockquote className="blockquote col-8 mx-auto">
           <p className="mb-4">
