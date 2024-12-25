@@ -644,5 +644,441 @@
       "detailsImage2": "tour-1.jpg",
       "category": "Europe"
     }
+  ],
+  "hotelsPhupket": [
+    {
+      "id": 1,
+      "name": "Ocean View Resort",
+      "country": "Thailand",
+      "description": "A beachfront resort offering stunning views and relaxing amenities.",
+      "image": "https://www.hilton.com/im/en/CZMPCHH/7888781/czmpc-pool-3.jpg?impolicy=crop&cw=5000&ch=3203&gravity=NorthWest&xposition=0&yposition=64&rw=1280&rh=820",
+      "location": {
+        "address": "456 Ocean Drive, Phuket, 83100, Thailand",
+        "city": "Phuket",
+        "state": "Phuket",
+        "country": "Thailand",
+        "zip_code": "83100",
+        "latitude": 7.8804,
+        "longitude": 98.3923
+      },
+      "amenities": [
+        "Beach Access",
+        "Infinity Pool",
+        "Spa",
+        "Gym",
+        "Complimentary Breakfast"
+      ],
+      "detailsImage1": "Best Price Guarantee",
+      "detailsImage2": "Free cancellation",
+      "price_per_night": 350,
+      "rating": 4.8,
+      "available_rooms": 20,
+      "images": [
+        "https://example.com/images/oceanview1.jpg",
+        "https://example.com/images/oceanview2.jpg"
+      ],
+      "contact_info": {
+        "phone": "+66 305 123 4567",
+        "email": "info@oceanviewresort.com"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Phuket Beachfront Hotel",
+      "country": "Thailand",
+      "description": "Experience luxury on the beach with modern amenities and stunning views.",
+      "image": "https://content.r9cdn.net/rimg/dimg/0a/9e/073516d2-city-35107-1656d23229c.jpg?crop=true&width=1366&height=768&xhint=2420&yhint=1089",
+      "location": {
+        "address": "789 Beach Road, Phuket, 83200, Thailand",
+        "city": "Phuket",
+        "state": "Phuket",
+        "country": "Thailand",
+        "zip_code": "83200",
+        "latitude": 7.8810,
+        "longitude": 98.3925
+      },
+      "amenities": [
+        "Beach Access",
+        "Pool",
+        "Bar",
+        "Restaurant",
+        "Wi-Fi"
+      ],
+      "detailsImage1": "Ocean Views",
+      "detailsImage2": "24/7 Room Service",
+      "price_per_night": 275,
+      "rating": 4.5,
+      "available_rooms": 15,
+      "images": [
+        "https://example.com/images/phuketbeachfront1.jpg",
+        "https://example.com/images/phuketbeachfront2.jpg"
+      ],
+      "contact_info": {
+        "phone": "+66 305 234 5678",
+        "email": "contact@phuketbeachfront.com"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Luxury Resort & Spa",
+      "country": "Thailand",
+      "description": "A 5-star resort with world-class spa services and an exclusive beach.",
+      "image": "https://assets.kerzner.com/api/public/content/ee8f360722de459a93ca4eaa257b308b?v=a3566083&t=w2880",
+      "location": {
+        "address": "123 Luxury Lane, Phuket, 83110, Thailand",
+        "city": "Phuket",
+        "state": "Phuket",
+        "country": "Thailand",
+        "zip_code": "83110",
+        "latitude": 7.8700,
+        "longitude": 98.3900
+      },
+      "amenities": [
+        "Private Beach",
+        "Infinity Pool",
+        "Spa & Wellness Center",
+        "Fine Dining",
+        "Fitness Center"
+      ],
+      "detailsImage1": "Exclusive Beach Access",
+      "detailsImage2": "24-Hour Concierge",
+      "price_per_night": 500,
+      "rating": 4.9,
+      "available_rooms": 10,
+      "images": [
+        "https://example.com/images/luxuryresort1.jpg",
+        "https://example.com/images/luxuryresort2.jpg"
+      ],
+      "contact_info": {
+        "phone": "+66 305 345 6789",
+        "email": "info@luxuryresort.com"
+      }
+    },
+    {
+      "id": 4,
+      "name": "Phuket Villa Retreat",
+      "country": "Thailand",
+      "description": "A private villa retreat offering an exclusive stay with personalized services.",
+      "image": "https://assets.oakshotels.com/image/upload/q_auto,f_auto,c_limit,w_1920/media/minor/oaks/images/australia/new-south-wales/regional/santai/1920x1080/2023-photos-1920x1080/oaks-casuarina-santai-resort-courtyard-2-1920x1080px.jpg",
+      "location": {
+        "address": "890 Villa Road, Phuket, 83210, Thailand",
+        "city": "Phuket",
+        "state": "Phuket",
+        "country": "Thailand",
+        "zip_code": "83210",
+        "latitude": 7.8550,
+        "longitude": 98.3980
+      },
+      "amenities": [
+        "Private Villa",
+        "Pool",
+        "Garden",
+        "Butler Service",
+        "Yoga Classes"
+      ],
+      "detailsImage1": "Personalized Experience",
+      "detailsImage2": "Private Pool",
+      "price_per_night": 700,
+      "rating": 5.0,
+      "available_rooms": 5,
+      "images": [
+        "https://example.com/images/phuketvillaretreat1.jpg",
+        "https://example.com/images/phuketvillaretreat2.jpg"
+      ],
+      "contact_info": {
+        "phone": "+66 305 456 7890",
+        "email": "contact@phuketvillaretreat.com"
+      }
+    },
+    {
+      "id": 5,
+      "name": "Andaman Bay Resort",
+      "country": "Thailand",
+      "description": "A cozy resort located by the Andaman Bay, offering a tranquil retreat.",
+      "image": "https://i.natgeofe.com/n/82531981-3fee-43f9-8f4b-fc9f61f89d69/DJI_20230901164320_0805_D-HDR-2-1.jpg",
+      "location": {
+        "address": "123 Andaman Road, Phuket, 83120, Thailand",
+        "city": "Phuket",
+        "state": "Phuket",
+        "country": "Thailand",
+        "zip_code": "83120",
+        "latitude": 7.8600,
+        "longitude": 98.4000
+      },
+      "amenities": [
+        "Beach Access",
+        "Ocean View Rooms",
+        "Outdoor Pool",
+        "Restaurant",
+        "Free Wi-Fi"
+      ],
+      "detailsImage1": "Peaceful Beachfront",
+      "detailsImage2": "Secluded Location",
+      "price_per_night": 250,
+      "rating": 4.6,
+      "available_rooms": 30,
+      "images": [
+        "https://example.com/images/andamanbay1.jpg",
+        "https://example.com/images/andamanbay2.jpg"
+      ],
+      "contact_info": {
+        "phone": "+66 305 567 8901",
+        "email": "info@andamanbayresort.com"
+      }
+    },
+    {
+      "id": 6,
+      "name": "The Phuket Orchid Hotel",
+      "country": "Thailand",
+      "description": "A tropical escape surrounded by lush gardens and scenic views.",
+      "image": "https://www.theworlds50best.com/hotels/filestore/jpg/W50BH24-AoH-summary.jpg",
+      "location": {
+        "address": "456 Orchid Lane, Phuket, 83130, Thailand",
+        "city": "Phuket",
+        "state": "Phuket",
+        "country": "Thailand",
+        "zip_code": "83130",
+        "latitude": 7.8780,
+        "longitude": 98.3967
+      },
+      "amenities": [
+        "Garden Views",
+        "Pool",
+        "Free Wi-Fi",
+        "Restaurant",
+        "Spa"
+      ],
+      "detailsImage1": "Tropical Garden",
+      "detailsImage2": "Relaxing Poolside",
+      "price_per_night": 220,
+      "rating": 4.7,
+      "available_rooms": 25,
+      "images": [
+        "https://example.com/images/phuketorchid1.jpg",
+        "https://example.com/images/phuketorchid2.jpg"
+      ],
+      "contact_info": {
+        "phone": "+66 305 678 9012",
+        "email": "contact@phuketorchid.com"
+      }
+    },
+    {
+      "id": 7,
+      "name": "Patong Beach Resort",
+      "country": "Thailand",
+      "description": "A vibrant resort near the bustling Patong Beach, perfect for nightlife lovers.",
+      "image": "https://www.telegraph.co.uk/content/dam/Travel/hotels/2024/august/mandarin-oriental-bangkok-hotel-bedroom-product-image.jpg",
+      "location": {
+        "address": "789 Patong Beach Road, Phuket, 83150, Thailand",
+        "city": "Phuket",
+        "state": "Phuket",
+        "country": "Thailand",
+        "zip_code": "83150",
+        "latitude": 7.8952,
+        "longitude": 98.3039
+      },
+      "amenities": [
+        "Beach Access",
+        "Pool",
+        "Bar",
+        "Wi-Fi",
+        "Nightlife Activities"
+      ],
+      "detailsImage1": "Vibrant Beach Atmosphere",
+      "detailsImage2": "Ocean Views",
+      "price_per_night": 180,
+      "rating": 4.3,
+      "available_rooms": 40,
+      "images": [
+        "https://example.com/images/patongbeach1.jpg",
+        "https://example.com/images/patongbeach2.jpg"
+      ],
+      "contact_info": {
+        "phone": "+66 305 789 0123",
+        "email": "info@patongbeachresort.com"
+      }
+    },
+    {
+      "id": 8,
+      "name": "Serenity Resort Phuket",
+      "country": "Thailand",
+      "description": "A peaceful haven designed for relaxation and wellness, offering spa treatments and yoga sessions.",
+      "image": "https://image-tc.galaxy.tf/wijpeg-6lch80scperpyx8jjgf928wwc/pakistanedited-ee8762.jpg?width=768&height=336",
+      "location": {
+        "address": "123 Serenity Way, Phuket, 83140, Thailand",
+        "city": "Phuket",
+        "state": "Phuket",
+        "country": "Thailand",
+        "zip_code": "83140",
+        "latitude": 7.8600,
+        "longitude": 98.3895
+      },
+      "amenities": [
+        "Spa",
+        "Yoga Classes",
+        "Wellness Center",
+        "Pool",
+        "Meditation Garden"
+      ],
+      "detailsImage1": "Relaxation and Wellness",
+      "detailsImage2": "Tranquil Escape",
+      "price_per_night": 400,
+      "rating": 4.8,
+      "available_rooms": 15,
+      "images": [
+        "https://example.com/images/serenityresort1.jpg",
+        "https://example.com/images/serenityresort2.jpg"
+      ],
+      "contact_info": {
+        "phone": "+66 305 890 1234",
+        "email": "contact@serenityresort.com"
+      }
+    },
+    {
+      "id": 9,
+      "name": "The Naka Island Resort & Spa",
+      "country": "Thailand",
+      "description": "A secluded luxury resort on a private island offering ultimate relaxation.",
+      "image": "https://element-hotels.marriott.com/wp-content/uploads/2024/05/elmRNOELex.1279277_sq_1536x1536-768x768.jpg",
+      "location": {
+        "address": "123 Naka Island Road, Phuket, 83100, Thailand",
+        "city": "Phuket",
+        "state": "Phuket",
+        "country": "Thailand",
+        "zip_code": "83100",
+        "latitude": 7.8424,
+        "longitude": 98.3047
+      },
+      "amenities": [
+        "Private Island",
+        "Spa",
+        "Infinity Pool",
+        "Restaurant",
+        "Water Sports"
+      ],
+      "detailsImage1": "Private Villa with Ocean View",
+      "detailsImage2": "Luxury Spa Treatments",
+      "price_per_night": 850,
+      "rating": 4.9,
+      "available_rooms": 8,
+      "images": [
+        "https://example.com/images/nakaisland1.jpg",
+        "https://example.com/images/nakaisland2.jpg"
+      ],
+      "contact_info": {
+        "phone": "+66 305 901 2345",
+        "email": "contact@nakaislandresort.com"
+      }
+    },
+    {
+      "id": 10,
+      "name": "JW Marriott Phuket Resort & Spa",
+      "country": "Thailand",
+      "description": "An opulent beachfront resort offering a luxurious spa, fine dining, and family-friendly activities.",
+      "image": "https://t3.ftcdn.net/jpg/00/29/13/38/360_F_29133877_bfA2n7cWV53fto2BomyZ6pyRujJTBwjd.jpg",
+      "location": {
+        "address": "2345 Beachfront Road, Phuket, 83150, Thailand",
+        "city": "Phuket",
+        "state": "Phuket",
+        "country": "Thailand",
+        "zip_code": "83150",
+        "latitude": 7.8831,
+        "longitude": 98.3036
+      },
+      "amenities": [
+        "Beachfront Access",
+        "Infinity Pool",
+        "Spa",
+        "Kids Club",
+        "Fine Dining"
+      ],
+      "detailsImage1": "Exclusive Beach Access",
+      "detailsImage2": "Luxury Spa Experience",
+      "price_per_night": 600,
+      "rating": 4.8,
+      "available_rooms": 30,
+      "images": [
+        "https://example.com/images/jwmarriott1.jpg",
+        "https://example.com/images/jwmarriott2.jpg"
+      ],
+      "contact_info": {
+        "phone": "+66 305 987 6543",
+        "email": "info@jwmarriottphuket.com"
+      }
+    },
+    {
+      "id": 11,
+      "name": "Phuket Graceland Resort & Spa",
+      "country": "Thailand",
+      "description": "A popular resort offering spacious rooms and a variety of amenities for both relaxation and adventure.",
+      "image": "https://bynder.onthebeach.co.uk/cdn-cgi/image/width=1400,quality=70,fit=cover,format=auto,height=933/m/4a9d6c8c5f714e6/original/Xoria-Deluxe-Hotel.jpg",
+      "location": {
+        "address": "456 Graceland Road, Phuket, 83150, Thailand",
+        "city": "Phuket",
+        "state": "Phuket",
+        "country": "Thailand",
+        "zip_code": "83150",
+        "latitude": 7.8854,
+        "longitude": 98.3031
+      },
+      "amenities": [
+        "Beach Access",
+        "Water Sports",
+        "Pool",
+        "Spa",
+        "Gym"
+      ],
+      "detailsImage1": "Spacious Rooms",
+      "detailsImage2": "Family-Friendly Activities",
+      "price_per_night": 320,
+      "rating": 4.7,
+      "available_rooms": 35,
+      "images": [
+        "https://example.com/images/graceland1.jpg",
+        "https://example.com/images/graceland2.jpg"
+      ],
+      "contact_info": {
+        "phone": "+66 305 678 9012",
+        "email": "contact@phuketgraceland.com"
+      }
+    },
+    {
+      "id": 12,
+      "name": "The Vijitt Resort Phuket",
+      "country": "Thailand",
+      "description": "An idyllic resort perfect for couples, offering stunning sunset views and intimate settings.",
+      "image": "https://media.istockphoto.com/id/960290628/photo/las-vegas-city-skyline-and-bellagio-hotel-water-fountain-nevada-usa.jpg?s=612x612&w=0&k=20&c=mBgyEYRQkpT4b7oS9xXgxgIvD3Wi4QyqAQXK15_3CI4=",
+      "location": {
+        "address": "123 Vijitt Road, Phuket, 83110, Thailand",
+        "city": "Phuket",
+        "state": "Phuket",
+        "country": "Thailand",
+        "zip_code": "83110",
+        "latitude": 7.8312,
+        "longitude": 98.2856
+      },
+      "amenities": [
+        "Private Beach",
+        "Yoga Classes",
+        "Outdoor Pool",
+        "Spa",
+        "Restaurant"
+      ],
+      "detailsImage1": "Sunset Views",
+      "detailsImage2": "Couple's Retreat",
+      "price_per_night": 420,
+      "rating": 4.9,
+      "available_rooms": 18,
+      "images": [
+        "https://example.com/images/vijittresort1.jpg",
+        "https://example.com/images/vijittresort2.jpg"
+      ],
+      "contact_info": {
+        "phone": "+66 305 123 9876",
+        "email": "info@vijittresort.com"
+      }
+    }
+    
+    
   ]
 }

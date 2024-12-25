@@ -1,0 +1,93 @@
+
+
+
+.countryName,.results-number{
+    margin-bottom: 10px;
+    color: rgb(3, 3, 77);
+    
+}
+
+
+.cardImage{
+    height: 230px;
+    object-fit: cover;
+    border-radius: 20px;
+    padding-inline: 10px;
+    border: radius top 20px;
+    
+    
+}
+.card-body{
+  
+  display: flex;
+  flex-direction: column;
+
+}
+.cardSize{
+  height: 230px;
+  border-radius: 20px;
+  border: none;
+  
+}
+
+.card-title{
+    color: rgb(3, 3, 77);
+    margin-block: 4px;
+    font-size: 20px;
+    
+    
+}
+.card-description{
+    color: rgb(3, 3, 77);
+    font-size: 15px;
+}
+.verification{
+    color: rgb(168, 83, 3) ;
+}
+.priceText{
+    color: rgb(3, 3, 77);
+    font-size: 18px;
+}
+
+.detailsButton{
+    width: 180px;
+    height: 60px;
+    border-radius: 10px;
+    border: 1px rgb(168, 83, 3) solid;
+    color: rgb(168, 83, 3);
+    background-color: white;
+    transition: background-color 0.7s;
+}
+
+.detailsButton:hover{
+  background-color: rgb(168, 83, 3);
+  color: white;
+  border: 1px rgb(168, 83, 3) solid;
+}
+
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .page-button {
+    border: none;
+    background-color: #f1f1f1;
+    color: #333;
+    padding: 10px 15px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .page-button:hover {
+    background-color: #ddd;
+  }
+  
+  .page-button.active {
+    background-color: #007bff;
+    color: white;
+  }
+  
