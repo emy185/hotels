@@ -8,7 +8,6 @@ import * as Yup from 'yup';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-// Validation schema with Yup
 const validationSchema = Yup.object({
   email: Yup.string()
     .email('Invalid email format')
@@ -16,11 +15,11 @@ const validationSchema = Yup.object({
 });
 
 function AppBooking() {
-  const handleSubmit = (values, { setSubmitting }) => {
-    // Simulate API request and success
+  const handleSubmit = (values, { setSubmitting, resetForm }) => {
     setTimeout(() => {
       toast.success('Email sent successfully!');
       setSubmitting(false);
+      resetForm(); 
     }, 1000);
   };
 
