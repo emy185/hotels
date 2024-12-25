@@ -1,205 +1,30 @@
 @import "../../styles/variables.css";
 
-.faq h1 {
-  color: var(--secondary-color);
-  font-weight: bold;
-  font-size: 25px;
-  border-top: 2px solid rgb(236, 234, 234);
+.hotel-title h1 {
+  font-size: 50px;
 }
 
-.questions {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.questions span {
-  font-weight: bold;
-  color: var(--secondary-color);
-}
-
-.toggle-btn {
-  border: none;
-  border-radius: 50px;
-  font-size: 25px;
-}
-
-.toggle-btn.collapsed {
-  background-color: var(--section-background);
-  color: var(--primary-color);
-  padding: 0 10px;
-}
-
-.toggle-btn.expanded {
-  background-color: var(--primary-color);
-  color: white;
-  padding: 2px 14px;
-}
-
-.faq-box {
-  border: 1px solid rgb(221, 218, 218);
-  border-radius: 10px;
-  color: var(--secondary-color);
-  padding: 5px 20px;
-}
-.faq-items {
-  border-bottom: 2px solid rgb(236, 234, 234);
-}
-
-.reply-info {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.reply-info div {
-  display: flex;
-  align-items: baseline;
-  gap: 20px;
-}
-
-.reply-info h1 {
-  background-color: var(--secondary-color);
-  color: white;
-  padding: 12px 10px;
-  border-radius: 50px;
-}
-
-.rating div {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-}
-
-.rating {
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  gap: 10px;
-}
-
-.reviews span {
+.hotel-title span {
   color: var(--secondary-color);
   font-weight: normal;
+  font-size: 14px;
 }
 
-.reactions {
-  display: flex;
-  gap: 20px;
-}
-
-.reactions button {
-  border: none;
-  background-color: transparent;
-}
-
-.see-reviews {
-  color: var(--primary-color);
-  background-color: transparent;
-  border: 1px solid var(--primary-color);
-  font-size: 15px;
-  border-radius: 5px;
-  padding: 15px 22px;
-}
-
-.container-item {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 20px;
-}
-
-.container-rows {
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  gap: 4rem;
-}
-
-.food {
-  padding-right: 61px;
-}
-.room {
-  padding-right: 18px;
-}
-.price {
-  padding-right: 34px;
-}
-
-.reply h1 {
+.link {
   color: var(--secondary-color);
-  font-weight: bold;
-  font-size: 30px;
+  text-decoration: none;
 }
 
-.form-row-1 {
-  display: flex;
-  gap: 20px;
-}
-
-.reply-button {
-  color: white;
-  background-color: var(--primary-color);
-  border: 1px solid var(--primary-color);
-  font-size: 15px;
-  border-radius: 5px;
-  padding: 10px 20px;
-}
-
-.suggestions h1 {
-  color: var(--secondary-color);
-  font-weight: bold;
-  font-size: 24px;
-}
-
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 20px;
-}
-
-.card {
-  width: 290px;
-}
-
-.card-img-top {
-  border-radius: 10px;
-}
-
-.card-rating {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  border-bottom: 1px solid rgb(232, 228, 228);
-}
-
-.card-body span {
-  color: var(--secondary-color);
-  font-weight: normal;
-}
-.card-body h5 {
-  color: var(--secondary-color);
-  font-size: 16px;
-  font-weight: bold;
-}
-
-.card-price {
+.hotel-title-row {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.card-img {
-  position: relative;
-}
-
-.card button {
-  border: none;
-  border-radius: 50px;
-  position: absolute;
-  bottom: 5px;
-  right: 10px;
+.hotel-title-row-flex {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
 }
 
 .trip-info {
@@ -213,11 +38,6 @@
   display: flex;
   align-items: center;
   gap: 15px;
-}
-
-.info span {
-  color: var(--secondary-color);
-  font-weight: normal;
 }
 
 .details h1 {
@@ -349,29 +169,225 @@
   border-radius: 10px;
 }
 
-.hotel-title h1 {
-  font-size: 50px;
+.book-now:hover,
+.reply-button:hover {
+  background-color: transparent;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  transition: 0.3s ease-in;
 }
 
-.hotel-title span {
+.suggestions h1 {
+  color: var(--secondary-color);
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
+
+.card {
+  width: 290px;
+}
+
+.card-img-top {
+  border-radius: 10px;
+}
+
+.card-rating {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1px solid rgb(232, 228, 228);
+}
+
+.card-body span,
+.info span {
   color: var(--secondary-color);
   font-weight: normal;
-  font-size: 14px;
 }
 
-.link {
+.card-body h5 {
   color: var(--secondary-color);
-  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
 }
 
-.hotel-title-row {
+.card-price {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.hotel-title-row-flex {
+.card-img {
+  position: relative;
+}
+
+.card button {
+  border: none;
+  border-radius: 50px;
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+}
+
+.faq h1 {
+  color: var(--secondary-color);
+  font-weight: bold;
+  font-size: 25px;
+  border-top: 2px solid rgb(236, 234, 234);
+}
+
+.questions {
   display: flex;
   align-items: center;
-  gap: 2.5rem;
+  justify-content: space-between;
+}
+
+.questions span {
+  font-weight: bold;
+  color: var(--secondary-color);
+}
+
+.toggle-btn {
+  border: none;
+  border-radius: 50px;
+  font-size: 25px;
+}
+
+.toggle-btn.collapsed {
+  background-color: var(--section-background);
+  color: var(--primary-color);
+  padding: 0 10px;
+  transition: 0.3s ease-in;
+}
+
+.toggle-btn.expanded {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 2px 14px;
+  transition: 0.3s ease-in;
+}
+
+.faq-box {
+  border: 1px solid rgb(221, 218, 218);
+  border-radius: 10px;
+  color: var(--secondary-color);
+  padding: 5px 20px;
+}
+
+.faq-items {
+  border-bottom: 2px solid rgb(236, 234, 234);
+}
+
+.reply-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.reply-info div {
+  display: flex;
+  align-items: baseline;
+  gap: 20px;
+}
+
+.reply-info h1 {
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 12px 10px;
+  border-radius: 50px;
+}
+
+.rating div {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.rating {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+}
+
+.reviews span {
+  color: var(--secondary-color);
+  font-weight: normal;
+}
+
+.reactions {
+  display: flex;
+  gap: 20px;
+}
+
+.reactions button {
+  border: none;
+  background-color: transparent;
+}
+
+.see-reviews {
+  color: var(--primary-color);
+  background-color: transparent;
+  border: 1px solid var(--primary-color);
+  font-size: 15px;
+  border-radius: 5px;
+  padding: 15px 22px;
+}
+
+.see-reviews:hover {
+  background-color: var(--primary-color);
+  color: white;
+  transition: 0.3s ease-in;
+}
+
+.container-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
+
+.container-rows {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 4rem;
+}
+
+.food {
+  padding-right: 61px;
+}
+
+.room {
+  padding-right: 18px;
+}
+
+.price {
+  padding-right: 34px;
+}
+
+.reply h1 {
+  color: var(--secondary-color);
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.form-row-1 {
+  display: flex;
+  gap: 20px;
+}
+
+.reply-button {
+  color: white;
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  font-size: 15px;
+  border-radius: 5px;
+  padding: 10px 20px;
 }

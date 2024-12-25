@@ -27,14 +27,14 @@ function FeaturedTrips() {
                 <div className="card-img">
                   <img
                     src={imagePath}
-                    className="card-img-top"
+                    className="card-img-top pb-3"
                     alt={trip.title}
                   />
                   <button>
                     <CiHeart />
                   </button>
                 </div>
-                <div className="card-body p-3">
+                <div className="card-body px-3 pb-3">
                   <span className="text-secondary">
                     <SlLocationPin /> {trip.destination}
                   </span>
