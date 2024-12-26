@@ -194,7 +194,10 @@ const BookingPage = () => {
                 </p>
                 <p>
                   <strong>Time:</strong>
-                  <span className={`${style.data} float-end`}> {bookingDetails.time}</span>
+                  <span className={`${style.data} float-end`}>
+                    {" "}
+                    {bookingDetails.time}
+                  </span>
                 </p>
                 <p>
                   <strong>Duration:</strong>
@@ -204,9 +207,12 @@ const BookingPage = () => {
                   <strong>Tickets:</strong>
                   <span className={`${style.data} float-end`}>
                     {" "}
-                    Adult x{bookingDetails.adultCount} = ${282.0*bookingDetails.adultCount}
-                    <br /> Youth x{bookingDetails.youthCount} = ${168.0*bookingDetails.youthCount}
-                    <br /> Children x{bookingDetails.childCount} = ${80.0*bookingDetails.childCount}
+                    Adult x{bookingDetails.adultCount} = $
+                    {282.0 * bookingDetails.adultCount}
+                    <br /> Youth x{bookingDetails.youthCount} = $
+                    {168.0 * bookingDetails.youthCount}
+                    <br /> Children x{bookingDetails.childCount} = $
+                    {80.0 * bookingDetails.childCount}
                   </span>
                 </p>
               </Row>
@@ -214,11 +220,20 @@ const BookingPage = () => {
               <Row>
                 <p>
                   <strong>Service per booking</strong>
-                  <span className={`${style.data} float-end`}> ${bookingDetails.servicePerBooking}</span>
+                  <span className={`${style.data} float-end`}>
+                    {" "}
+                    ${bookingDetails.servicePerBooking}
+                  </span>
                 </p>
                 <p>
-                  <strong>Service per person {bookingDetails.adultCount} Adult,{bookingDetails.youthCount}</strong>
-                  <span className={`${style.data} float-end`}> ${bookingDetails.servicePerPerson}</span>
+                  <strong>
+                    Service per person {bookingDetails.adultCount} Adult,
+                    {bookingDetails.youthCount}
+                  </strong>
+                  <span className={`${style.data} float-end`}>
+                    {" "}
+                    ${bookingDetails.servicePerPerson}
+                  </span>
                 </p>
                 <p>
                   <strong>Youth,{bookingDetails.childCount} Children</strong>
@@ -228,11 +243,19 @@ const BookingPage = () => {
               <Row>
                 <p>
                   <strong>Subtotal</strong>
-                  <span className={`${style.data} float-end`}>${(bookingDetails.adultCount*282)+(bookingDetails.youthCount*168)+(bookingDetails.childCount*80)}</span>
+                  <span className={`${style.data} float-end`}>
+                    $
+                    {bookingDetails.adultCount * 282 +
+                      bookingDetails.youthCount * 168 +
+                      bookingDetails.childCount * 80}
+                  </span>
                 </p>
                 <p>
                   <strong>Total</strong>
-                  <span className={`${style.data} float-end`}> ${bookingDetails.total}</span>
+                  <span className={`${style.data} float-end`}>
+                    {" "}
+                    ${bookingDetails.total}
+                  </span>
                 </p>
                 <p>
                   <strong>Amount Paid</strong>
@@ -240,7 +263,10 @@ const BookingPage = () => {
                 </p>
                 <p>
                   <strong>Amount Due</strong>
-                  <span className={`${style.data} float-end`}> ${bookingDetails.total-40.00} </span>
+                  <span className={`${style.data} float-end`}>
+                    {" "}
+                    ${bookingDetails.total - 40.0}{" "}
+                  </span>
                 </p>
               </Row>
             </ul>

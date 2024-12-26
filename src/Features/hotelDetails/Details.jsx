@@ -139,7 +139,8 @@ function Details() {
                   <ul className="amenities-list">
                     {item.amenities.map((amenity, index) => (
                       <li key={index} className="amenity-item pb-3">
-                      <IoMdCheckmark className="text-success sucess fs-2" /> {amenity}
+                        <IoMdCheckmark className="text-success sucess fs-2" />{" "}
+                        {amenity}
                       </li>
                     ))}
                   </ul>

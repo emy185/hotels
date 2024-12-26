@@ -1,0 +1,109 @@
+@import url("../../styles/variables.css");
+.header {
+  position: relative;
+}
+
+.search-bar {
+  position: absolute;
+  top: 10%;
+  left: 25%;
+}
+
+.search-bar-title {
+  background: linear-gradient(to right, rgb(255, 136, 0), rgb(112, 68, 214));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.search-content {
+  display: flex;
+  background-color: white;
+  border-bottom: none;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.search-button {
+  border-radius: 50px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  margin: 5px;
+  padding: 10px;
+}
+
+.icon {
+  background-color: var(--section-background);
+}
+
+.img1 {
+  height: 500px;
+  width: 400px;
+  border-radius: 10px;
+}
+
+.img2 {
+  height: 240px;
+  width: 350px;
+  border-radius: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.img3 {
+  height: 240px;
+  width: 450px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.img4,
+.img5,
+.img6 {
+  height: 250px;
+  width: 263px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.activities span {
+  position: absolute;
+  color: white;
+  font-size: 1rem;
+}
+
+.activities-item1,
+.activities-item2,
+.activities-item3,
+.activities-item4,
+.activities-item5,
+.activities-item6 {
+  position: relative;
+}
+
+.activities-item1 span,
+.activities-item4 span,
+.activities-item5 span,
+.activities-item6 span {
+  bottom: 10px;
+  left: 20px;
+}
+
+.activities-item2 span,
+.activities-item3 span {
+  bottom: 20px;
+  left: 20px;
+}
+
+.activities-item6 span {
+  bottom: 10px;
+  left: 20px;
+}
+
+.benefits span {
+  color: var(--secondary-color);
+  font-size: 14px;
+}

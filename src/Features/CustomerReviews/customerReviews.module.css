@@ -1,9 +1,9 @@
-.imgsz{
-    height: 100px;
-    width: 100px;
+.imgsz {
+  height: 100px;
+  width: 100px;
 }
 
-    .icon{
-        font-size: 2.5rem !important;
-        color: orangered;
-    }
+.icon {
+  font-size: 2.5rem !important;
+  color: orangered;
+}

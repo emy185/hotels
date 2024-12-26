@@ -33,6 +33,7 @@ function Contact() {
               width="100%"
               height="300"
               allowfullscreen=""
+              title="contact-map"
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>

@@ -1,158 +1,153 @@
 .leftNote {
-    background-color: white !important;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    padding: 15px 10px;
-    margin-bottom: 2%;
-    border-radius: 10px;
-    display: flex;
-    align-items: center !important;
+  background-color: white !important;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 15px 10px;
+  margin-bottom: 2%;
+  border-radius: 10px;
+  display: flex;
+  align-items: center !important;
 
-    p {
-        color: var(--secondary-color);
+  p {
+    color: var(--secondary-color);
 
-        span {
-            color: var(--primary-color);
-        }
+    span {
+      color: var(--primary-color);
     }
+  }
 }
 
 .leftForm {
-    background-color: white !important;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 30px;
-    border-radius: 10px;
+  background-color: white !important;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border-radius: 10px;
 
-    h2 {
-        color: var(--secondary-color);
-        font-weight: 700;
-        font-size: 1.8rem;
+  h2 {
+    color: var(--secondary-color);
+    font-weight: 700;
+    font-size: 1.8rem;
+  }
 
+  p {
+    font-size: 0.9rem;
+  }
+  input {
+    margin-bottom: 3.5%;
+  }
+
+  .btnSubmit {
+    background-color: #eb662b;
+    border-color: #eb662b;
+    padding: 15px 10px;
+    color: white;
+    margin: 10% auto;
+    display: block;
+    width: 150px;
+    text-align: center;
+
+    &:hover {
+      background-color: #993e18;
+      border-color: #da9a7f;
+      color: white;
     }
 
-    p {
-        font-size: .9rem;
+    i {
+      transform: rotate(45deg);
     }
-    input{
-        margin-bottom: 3.5%;
-    }
+  }
 
-    .btnSubmit {
-        background-color: #eb662b;
-        border-color: #eb662b;
-        padding: 15px 10px;
-        color: white;
-        margin: 10% auto;
-        display: block;
-        width: 150px;
-        text-align: center;
-
-        &:hover {
-            background-color: #993e18;
-            border-color: #da9a7f;
-            color: white;
-        }
-
-        i {
-            transform: rotate(45deg);
-        }
-    }
-
-    .mb-3 {
-        margin-bottom: 30px;
-    }
-
+  .mb-3 {
+    margin-bottom: 30px;
+  }
 }
 
 .righItem {
-    hr{
-        border: 1px solid grey;
-    }
-    padding: 0 5%;
+  hr {
+    border: 1px solid grey;
+  }
+  padding: 0 5%;
 
-    .rightInfo {
-        background-color: white !important;
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  .rightInfo {
+    background-color: white !important;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 5%;
+
+    h2 {
+      font-size: 1.4rem;
+      font-weight: 600;
+    }
+
+    .tripImg {
+      img {
+        width: 100%;
         border-radius: 10px;
-        padding: 20px;
-        margin-bottom: 5%;
-
-        h2 {
-            font-size: 1.4rem;
-            font-weight: 600;
-        }
-
-        .tripImg {
-            img {
-                width: 100%;
-                border-radius: 10px;
-            }
-        }
-
-        .tripName {
-            p {
-                font-size: .9rem;
-                line-height: 1.2;
-            }
-        }
-
-        strong {
-            font-size: .9rem;
-        }
-
-        .data {
-            color: var(--secondary-color);
-            font-weight: 300;
-            font-size: .9rem;
-            display: inline-block;
-            text-align: right;
-            direction: rtl;
-            white-space: pre-line;
-        }
-
+      }
     }
 
-    .rightCode {
-        background-color: white !important;
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-        border-radius: 10px;
-        padding: 10px;
-
-        h3 {
-            font-size: 1rem;
-            font-weight: 600;
-
-        }
-
-        .appltBtn {
-            background-color: transparent;
-            color: #eb662b;
-            border-color: #eb662b;
-            width: 120px;
-            padding: 10px 0;
-
-            i {
-                transform: rotate(45deg);
-            }
-
-            &:hover {
-                background-color: #eb662b;
-                color: white;
-            }
-        }
+    .tripName {
+      p {
+        font-size: 0.9rem;
+        line-height: 1.2;
+      }
     }
-    .orderBtn {
-        background-color: #eb662b ;
-        color: aliceblue;
-        padding: 10px 0;
 
-        i {
-            transform: rotate(45deg);
-        }
-        &:hover {
-            background-color: #993e18;
-            border-color: #da9a7f;
-            color: white;
-        }
+    strong {
+      font-size: 0.9rem;
     }
- 
+
+    .data {
+      color: var(--secondary-color);
+      font-weight: 300;
+      font-size: 0.9rem;
+      display: inline-block;
+      text-align: right;
+      direction: rtl;
+      white-space: pre-line;
+    }
+  }
+
+  .rightCode {
+    background-color: white !important;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 10px;
+
+    h3 {
+      font-size: 1rem;
+      font-weight: 600;
+    }
+
+    .appltBtn {
+      background-color: transparent;
+      color: #eb662b;
+      border-color: #eb662b;
+      width: 120px;
+      padding: 10px 0;
+
+      i {
+        transform: rotate(45deg);
+      }
+
+      &:hover {
+        background-color: #eb662b;
+        color: white;
+      }
+    }
+  }
+  .orderBtn {
+    background-color: #eb662b;
+    color: aliceblue;
+    padding: 10px 0;
+
+    i {
+      transform: rotate(45deg);
+    }
+    &:hover {
+      background-color: #993e18;
+      border-color: #da9a7f;
+      color: white;
+    }
+  }
 }

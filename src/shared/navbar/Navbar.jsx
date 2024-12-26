@@ -1,7 +1,6 @@
 import React from "react";
-import { Navbar, Nav, Container, Button } from "react-bootstrap";
+import { Navbar, Nav, Container } from "react-bootstrap";
 import logo from "../../assets/images/logo-1.svg";
-import "./Navbar.module.css";
 
 function NavBar() {
   return (
@@ -25,9 +24,12 @@ function NavBar() {
               <Nav.Link href="#">USD</Nav.Link>
               <Nav.Link href="#">Help</Nav.Link>
               <Nav.Link href="#">Sign up</Nav.Link>
-              <Button variant="outline-dark" className="rounded-5">
+              <Nav.Link
+                className="rounded-5 border px-3 border-dark"
+                href="/Login"
+              >
                 Log in
-              </Button>
+              </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

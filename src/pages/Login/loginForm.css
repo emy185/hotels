@@ -1,0 +1,82 @@
+@import url("../../styles/variables.css");
+
+.login-form {
+  text-align: center;
+}
+
+.login-form h1 {
+  color: var(--secondary-color);
+}
+
+.sign-up-link {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.lost-link {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+.form {
+  width: 35%;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; 
+}
+
+#remember {
+  margin-bottom: 0px;
+}
+
+.login-button {
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  padding: 10px 0px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.facebook {
+  padding: 8px 10px;
+  margin-right: 10px;
+  background-color: transparent;
+  border: 1px rgb(2, 123, 216) solid;
+  border-radius: 10px;
+  color: rgb(2, 123, 216);
+}
+
+.google {
+  padding: 8px 25px;
+  background-color: transparent;
+  border: 1px rgb(255, 68, 0) solid;
+  border-radius: 10px;
+  color: rgb(255, 68, 0);
+}
+.or-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.or-container .line {
+  flex: 1;
+  height: 1px;
+  background-color: #ccc;
+}
+
+.or {
+  margin: 0;
+}

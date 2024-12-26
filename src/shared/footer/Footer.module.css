@@ -1,50 +1,48 @@
 .container {
   display: flex;
   justify-content: center;
-  
 }
 
 .container .footer {
   background-color: var(--footer-background);
-  position:relative;
-  margin-top:60px;
+  position: relative;
+  margin-top: 60px;
   border-radius: 20px;
-  width:92%;
+  width: 92%;
 }
 
 .waveShape {
   width: 100%;
   height: auto;
   position: absolute;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
   background-color: var(--footer-background);
   transform: rotate(180deg);
-  z-index: 1; 
+  z-index: 1;
 }
 
-
 @media (max-width: 576px) {
-  .waveShape{
-    bottom:-12px;
+  .waveShape {
+    bottom: -12px;
   }
 }
 
-span{
+span {
   color: var(--primary-color);
-  font-weight:600;
+  font-weight: 600;
 }
 
-.line{
+.line {
   border: 1px solid #de9b21a8 !important;
 }
-.btn{
-  color:var(--background-color) !important;
-  border:2px solid var( --secondary-color) !important;
-  background-color:var( --secondary-color) !important;
-  transition: all .7s ease !important;
+.btn {
+  color: var(--background-color) !important;
+  border: 2px solid var(--secondary-color) !important;
+  background-color: var(--secondary-color) !important;
+  transition: all 0.7s ease !important;
 }
-.btn:hover{
-  background-color:transparent !important;
-  color:var( --secondary-color) !important;
+.btn:hover {
+  background-color: transparent !important;
+  color: var(--secondary-color) !important;
 }

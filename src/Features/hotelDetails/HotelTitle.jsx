@@ -11,9 +11,9 @@ import "./style.css";
 function HotelTitle() {
   const phuketData = data.hotelsPhupket || [];
   const location = useLocation();
-    const { id } = location.state;
-  
-    const item = phuketData.find((item) => item.id === id);
+  const { id } = location.state;
+
+  const item = phuketData.find((item) => item.id === id);
 
   return (
     <div className="py-3 hotel-title">

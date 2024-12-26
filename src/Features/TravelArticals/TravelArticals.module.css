@@ -1,75 +1,72 @@
 .travelSection {
-    margin-top: 2%;
+  margin-top: 2%;
 
-    .heading {
+  .heading {
+    color: var(--text-Color);
+    font-weight: 600;
+    font-size: 1.8rem;
+  }
+
+  .link {
+    text-decoration: none;
+    color: var(--text-Color);
+
+    i {
+      transform: rotate(-45deg);
+    }
+  }
+
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+
+    .card {
+      position: relative;
+      border: none;
+      border-radius: 10px;
+      overflow: hidden;
+
+      img {
+        height: 200px;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+
+      .badge {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        background: white;
         color: var(--text-Color);
+        padding: 5px 10px;
+        border-radius: 15px;
+        font-size: 13px;
+      }
+
+      .cardTitle {
+        color: rgb(195, 193, 193);
+
+        .date,
+        .author {
+          font-size: 15px;
+          color: var(--text-color) !important;
+          font-weight: 200;
+          margin-top: 10px;
+        }
+      }
+
+      .cardText {
+        font-size: 16px;
         font-weight: 600;
-        font-size: 1.8rem;
-    }
-
-    .link {
-        text-decoration: none;
         color: var(--text-Color);
-
-        i {
-            transform: rotate(-45deg);
-        }
+      }
     }
+  }
 
-    .cards {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        margin-top: 30px;
-
-        .card {
-            position: relative;
-            border: none;
-            border-radius: 10px;
-            overflow: hidden;
-
-            img {
-                height: 200px;
-                object-fit: cover;
-                border-radius: 10px;
-            }
-
-            .badge {
-                position: absolute;
-                top: 10px;
-                left: 10px;
-                background: white;
-                color: var(--text-Color);
-                padding: 5px 10px;
-                border-radius: 15px;
-                font-size: 13px;
-            }
-
-            .cardTitle {
-                color: rgb(195, 193, 193);
-
-                .date,
-                .author {
-                    font-size: 15px;
-                    color: var(--text-color) !important;
-                    font-weight: 200;
-                    margin-top: 10px;
-                }
-
-
-            }
-
-            .cardText {
-                font-size: 16px;
-                font-weight: 600;
-                color: var(--text-Color);
-            }
-        }
-
-    }
-
-    a {
-        text-decoration: none;
-    }
+  a {
+    text-decoration: none;
+  }
 }

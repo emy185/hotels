@@ -1,25 +1,25 @@
-import React from 'react';
-import style from './AppBooking.module.css';
-import { Container, Row, Col, Button } from 'react-bootstrap';
-import '@fortawesome/fontawesome-free/css/all.css';
-import image from '../../assets/images/1 (1).png';
-import { Formik, Field, Form, ErrorMessage } from 'formik';
-import * as Yup from 'yup';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import React from "react";
+import style from "./AppBooking.module.css";
+import { Container, Row, Col, Button } from "react-bootstrap";
+import "@fortawesome/fontawesome-free/css/all.css";
+import image from "../../assets/images/1 (1).png";
+import { Formik, Field, Form, ErrorMessage } from "formik";
+import * as Yup from "yup";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const validationSchema = Yup.object({
   email: Yup.string()
-    .email('Invalid email format')
-    .required('Email is required'),
+    .email("Invalid email format")
+    .required("Email is required"),
 });
 
 function AppBooking() {
   const handleSubmit = (values, { setSubmitting, resetForm }) => {
     setTimeout(() => {
-      toast.success('Email sent successfully!');
+      toast.success("Email sent successfully!");
       setSubmitting(false);
-      resetForm(); 
+      resetForm();
     }, 1000);
   };
 
@@ -31,12 +31,15 @@ function AppBooking() {
             <Col lg={6} className={style.leftAppBooing}>
               <div className={style.centerAppBooking}>
                 <h2>Get 5% off Your 1st app booking </h2>
-                <span>Booking's better on the app. Use promo code "ourBooking " to save!</span>
+                <span>
+                  Booking's better on the app. Use promo code "ourBooking " to
+                  save!
+                </span>
                 <p>Get a magic link sent to your email</p>
 
                 {/* Formik form */}
                 <Formik
-                  initialValues={{ email: '' }}
+                  initialValues={{ email: "" }}
                   validationSchema={validationSchema}
                   onSubmit={handleSubmit}
                 >
@@ -48,19 +51,27 @@ function AppBooking() {
                             type="email"
                             name="email"
                             placeholder="Email"
-                            className={`form-control ${touched.email && errors.email ? 'is-invalid' : ''}`}
+                            className={`form-control ${
+                              touched.email && errors.email ? "is-invalid" : ""
+                            }`}
                           />
                           {/* Error Message */}
                           <ErrorMessage
                             name="email"
                             component="div"
-                            className={`$style{textDanger} ${touched.email && errors.email ? 'd-block' : 'd-none'}`}
+                            className={`$style{textDanger} ${
+                              touched.email && errors.email
+                                ? "d-block"
+                                : "d-none"
+                            }`}
                           />
                         </Col>
                         <Col lg={3}>
                           <Button
                             type="submit"
-                            disabled={isSubmitting || !touched.email || errors.email}
+                            disabled={
+                              isSubmitting || !touched.email || errors.email
+                            }
                           >
                             Send <i className="fas fa-arrow-right"></i>
                           </Button>

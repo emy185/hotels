@@ -1,12 +1,10 @@
-.titleType{
- 
+.titleType {
   color: rgb(5, 2, 51); /* Text color */
   border-radius: 10px; /* Rounded corners */
-  width:200px;
+  width: 200px;
   font-size: 20px; /* Font size */
   border: none; /* No border */
   text-align: left;
-  
+
   transition: all 0.3s ease; /* Transition for hover effect */
 }
-
