@@ -107,3 +107,60 @@
   color: var(--secondary-color);
   font-size: 14px;
 }
+@media (max-width: 768px) {
+  .search-bar {
+    left: 10%;
+    top: 15%;
+    text-align: center;
+  }
+
+  .search-bar-title {
+    font-size: 30px;
+  }
+
+  .search-content {
+    flex-direction: row; 
+    gap: 10px;
+    flex-wrap: wrap; 
+  }
+
+  .search-button {
+    padding: 10px 15px;
+    margin-top: 10px;
+  }
+
+  .dropdown select {
+    width: 45%; 
+    min-width: 120px; 
+    font-size: 13px;
+  }
+  .popular-activities{
+    margin-top: 10%;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .search-bar-title {
+    font-size: 25px;
+  }
+
+  .search-content {
+    padding: 15px;
+  }
+
+  .search-button {
+    padding: 10px 20px;
+  }
+
+  .dropdown select {
+    width: 40%; 
+    font-size: 14px;
+  }
+
+  .img1, .img2, .img3, .img4, .img5, .img6 {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+}

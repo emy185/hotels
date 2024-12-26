@@ -154,64 +154,59 @@
     }
   ],
 
-  "users": [
-    {
-      "id": 1,
-      "name": "Alice Johnson",
-      "email": "alice.johnson@example.com",
-      "phone": "+1 123 456 789",
-      "role": "Guest",
-      "preferences": ["Pool Access", "Ocean View"]
-    },
-    {
-      "id": 2,
-      "name": "Bob Smith",
-      "email": "bob.smith@example.com",
-      "phone": "+1 987 654 321",
-      "role": "Guest",
-      "preferences": ["Free Wi-Fi", "Close to City Center"]
-    },
-    {
-      "id": 3,
-      "name": "Charlie Brown",
-      "email": "charlie.brown@example.com",
-      "phone": "+1 234 567 890",
-      "role": "Admin",
-      "preferences": ["Admin Access", "Premium Features"]
-    },
-    {
-      "id": 4,
-      "name": "Diana Prince",
-      "email": "diana.prince@example.com",
-      "phone": "+1 345 678 901",
-      "role": "Manager",
-      "preferences": ["Manage Rooms", "Handle Reservations"]
-    },
-    {
-      "id": 5,
-      "name": "Ethan Hunt",
-      "email": "ethan.hunt@example.com",
-      "phone": "+1 456 789 012",
-      "role": "Guest",
-      "preferences": ["Adventure Activities", "Mountain Views"]
-    },
-    {
-      "id": 6,
-      "name": "Fiona Gallagher",
-      "email": "fiona.gallagher@example.com",
-      "phone": "+1 567 890 123",
-      "role": "Guest",
-      "preferences": ["Pet-Friendly Rooms", "Budget Options"]
-    },
-    {
-      "id": 7,
-      "name": "George Bailey",
-      "email": "george.bailey@example.com",
-      "phone": "+1 678 901 234",
-      "role": "Support",
-      "preferences": ["Customer Assistance", "Issue Resolution"]
-    }
-  ],
+"users": [
+  {
+    "id": 1,
+    "name": "Alice Johnson",
+    "email": "alice.johnson@example.com",
+    "phone": "+1 123 456 789",
+    "role": "Traveler",
+    "image": "profile 1.jpg",
+    "review": "This platform has been a lifesaver for planning my vacations. I love the detailed options and the support team is always available. Highly recommend it!",
+    "preferences": ["Pool Access", "Ocean View"]
+  },
+  {
+    "id": 2,
+    "name": "Bob Smith",
+    "email": "bob.smith@example.com",
+    "phone": "+1 987 654 321",
+    "role": "Frequent User",
+    "review": "Booking with this website was seamless! The interface is user-friendly and the deals are amazing. Definitely a top choice for travelers.",
+    "image": "profile 2.jpg",
+    "preferences": ["Free Wi-Fi", "Close to City Center"]
+  },
+  {
+    "id": 3,
+    "name": "Charlie Brown",
+    "email": "charlie.brown@example.com",
+    "phone": "+1 234 567 890",
+    "role": "Tour Organizer",
+    "review": "Using this platform to organize group tours has been so convenient. The tools provided are efficient and easy to manage.",
+    "image": "profile 3.jpg",
+    "preferences": ["Admin Access", "Premium Features"]
+  },
+  {
+    "id": 4,
+    "name": "Diana Prince",
+    "email": "diana.prince@example.com",
+    "phone": "+1 345 678 901",
+    "role": "Manager",
+    "review": "I have tried many booking services, but this one stands out with its exceptional customer service and tailored options.",
+    "image": "profile 4.jpeg",
+    "preferences": ["Manage Rooms", "Handle Reservations"]
+  },
+  {
+    "id": 5,
+    "name": "Ethan Hunt",
+    "email": "ethan.hunt@example.com",
+    "phone": "+1 456 789 012",
+    "role": "Adventurer",
+    "review": "As someone who loves adventure, this website offers the best options for exploring unique destinations. Highly recommended!",
+    "image": "profile 5.jpeg",
+    "preferences": ["Adventure Activities", "Mountain Views"]
+  }
+],
+
 
   "tripPosts": [
     {
