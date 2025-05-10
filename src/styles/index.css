@@ -1,0 +1,10 @@
+@import "./variables.css";
+
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow-x: hidden !important;
+  font-family: Arial, sans-serif !important;
+  background-color: var(--background-color) !important;
+  color: var(--text-color) !important;
+}

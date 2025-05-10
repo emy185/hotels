@@ -1,0 +1,10 @@
+@import "../../styles/variables.css";
+
+.featured-trips {
+  background-color: var(--section-background);
+}
+
+.see-all {
+  color: var(--secondary-color);
+  text-decoration: none;
+}

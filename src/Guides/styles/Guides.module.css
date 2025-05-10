@@ -1,0 +1,41 @@
+.cardColor {
+  color: #05063c;
+}
+.btn.active {
+  background-color: #007bff;
+  color: white;
+}
+.buttonsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+.buttonCustom {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  background-color: white;
+  color: black;
+  padding: 8px 16px;
+  text-transform: uppercase;
+  outline: none;
+  cursor: pointer;
+  font-size: 14px;
+  transition: none;
+  margin: 5px;
+}
+
+.activeButton {
+  border: 1px solid #05063c;
+}
+.badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: white;
+  color: #333;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 13px;
+  z-index: 1;
+}

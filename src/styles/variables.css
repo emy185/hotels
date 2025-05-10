@@ -1,0 +1,14 @@
+:root {
+  /* Primary Colors */
+  --primary-color: #eb662b;
+  --secondary-color: #05063c;
+
+  /* Background Colors */
+  --background-color: #ffffff;
+  --section-background: #fff7f4;
+  --footer-background: #fef7f4;
+
+  /* Text Colors */
+  --text-color: #05063c;
+  --text-secondary: white;
+}
